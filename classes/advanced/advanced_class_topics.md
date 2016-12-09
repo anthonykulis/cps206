@@ -231,3 +231,48 @@ public class ImmutatblePOJO {
 By using the keyword `final` in the declaration of the POJO, I prevent it from ever changing after it has been 
 created. Of course, during the time of construction the member variable hasn't been created, so I can set it there. 
 But once I exit the constructor, that `num` is as `num` is until the garbage collector picks it up.
+
+## Singleton Classes
+Singleton classes are class that only need one instance. In many ways this is like a `static` inner class, but since 
+you cannot create static top level classes, we will can do singletons. 
+
+The basic idea behind this is that you will call for an `instance` of the class. If that instance does *not* exist, 
+you will create that one and return it. If it does exist, then you will return it only. But wait, how does a class 
+create itself? Good question. We will use a `static` method. A `static` method named `getInstance` will be available via 
+the class 
+(not 
+an instance) and it will return us the instance of the class. Lets look at the code.
+
+```java
+package classes.advanced;
+
+public class Singleton {
+   private static Singleton instance = null;
+   private int num = 0;
+   
+   private Singleton() {}
+   
+   public static Singleton getInstance() {
+      if(instance == null) {
+         instance = new Singleton();
+      }
+      return instance;
+   }
+   
+   public int getNum(){ return this.num; }
+   public void incrementNum(){ this.num++; }
+}
+```
+
+Now with this code, if we wanted to use the singleton, we have to do the following:
+
+    Singleton s = Singleton.getInstance();
+    System.out.println(s.getNum());
+    
+But what is cool about this, is that since there will only ever be one instance, we can have multiple variables work 
+on it.
+
+    Singleton a = Singleton.getInstance();
+    Singleton b = Singleton.getInstance(); 
+    a.increment();
+    System.out.println(b.getNum();
