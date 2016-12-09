@@ -37,7 +37,7 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 * How to create and when to use interfaces.
 
 ### [Advanced Interfaces](interfaces/advanced) (2 to 3 weeks)
-* How to use interfaces in polymorphism, pplying the Interface segregation principle, and using java 8 lambdas in interfaces. 
+* How to use interfaces in polymorphism, applying the Interface segregation principle, and using java 8 lambdas in interfaces. 
 
 ### [Advanced OOP Survey](advanced_survey_topics) if time permits (0 to 4 weeks)
 * Topics may include socket i/o, web, 3rd party queues, SaaS.
