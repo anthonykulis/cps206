@@ -15,10 +15,10 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 * Introduces [UML](advanced_java_concepts/uml.md) for the purpose of *swarming* a programming problem/feature.
 * Introcution to unit testing with [JUnit](advanced_java_concepts/junit.md) (pending software approval from school).
 
-### Basic [Classes](classes/basic) (1 week)
+### [Basic Classes](classes/basic) (1 week)
 * Covers keywords, basic theory, construction, and using. 
 
-### Advanced [Classes](classes/advanced) (1 week)
+### [Advanced Classes](classes/advanced) (1 week)
 * Covers principles of declartive programming, Single use purpose, Open/Closed priniciple, DRY
 
 ### [Basic Inheritance](oop_pillars/inheritance/basic) (2 to 3 weeks)
