@@ -25,7 +25,7 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 * Covers principles of declartive programming, Single use purpose, Open/Closed priniciple, DRY
 
 ### [Basic Inheritance](oop_pillars/inheritance/basic) (2 to 3 weeks)
-* How to extend objects enforcing the DRY principle leveraging proper abstractions
+* How to extend objects enforcing the DRY principle by leveraging proper abstractions
 
 ### Introduction to [Polymorphism](oop_pillars/polymorphism) (1 week)
 * What is polymorphism and when and why to use it.
