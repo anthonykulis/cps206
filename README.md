@@ -1,5 +1,5 @@
 # cps206
-JALC CPS206 Course Notes, Code Examples, Homeworks, and Labs
+JALC CPS206 Course Notes, Code Examples, [Homeworks](homeworks/), and [Labs](labs/)
 
 ## Tenative Schedule
 We will reveiw CPS176 in full. Then we will cover the following are the core topics to OOP while learning standard enterprise patterns of behavior. Finally, if time permits, we will cover advanced java topics applying the skills you have learned throughtout the semester.
