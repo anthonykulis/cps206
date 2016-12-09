@@ -1,6 +1,9 @@
 # cps206
 JALC CPS206 Course Notes, Code Examples, [Homeworks](homeworks/), and [Labs](labs/)
 
+## Objectives
+Introduce the 4 pillars of OOP ([Encapsulation](oop_pillars/encapsulation), [Abstraction](oop_pillars/abstraction), [Inheritance](oop_pillars/inheritance), and [Polymorphism](oop_pillars/polymorphism), cover when, where, and why to adhere to the pillars, and introduce professional coding standards found in many enterprise systems.
+
 ## Tenative Schedule
 We will reveiw CPS176 in full. Then we will cover the following are the core topics to OOP while learning standard enterprise patterns of behavior. Finally, if time permits, we will cover advanced java topics applying the skills you have learned throughtout the semester.
 
@@ -16,7 +19,7 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 * Introcution to unit testing with [JUnit](advanced_java_concepts/junit.md) (pending software approval from school).
 
 ### [Basic Classes](classes/basic) (1 week)
-* Covers keywords, basic theory, construction, and using. 
+* Covers keywords, basic theory such as [encapsulation](oop_pillars/encapsulation), construction, and using. 
 
 ### [Advanced Classes](classes/advanced) (1 week)
 * Covers principles of declartive programming, Single use purpose, Open/Closed priniciple, DRY
