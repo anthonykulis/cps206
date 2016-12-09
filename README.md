@@ -11,7 +11,7 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 * Introduces [Git and Github](git/) for code versioning using commit, pull, push.
 
 ### Advanced Java Construct Concepts (1 to 3 weeks)
-* [Exceptions](advanced_java_concepts/exceptions.md), [Recursion](advanced_java_concepts/recursion), [Iterators](advanced_java_concepts/iterators), leveraging existing [java 8 API](advanced_java_concepts/java8api.md), using [generic classes](advanced_java_concepts/generic_classes).
+* [Exceptions](advanced_java_concepts/exceptions.md), [Recursion](advanced_java_concepts/recursion.md), [Iterators](advanced_java_concepts/iterators.md), leveraging existing [java 8 API](advanced_java_concepts/java8api.md), using [generic classes](advanced_java_concepts/generic_classes.md).
 * Introduces [UML](advanced_java_concepts/uml.md) for the purpose of *swarming* a programming problem/feature.
 * Introcution to unit testing with [JUnit](advanced_java_concepts/junit.md) (pending software approval from school).
 
