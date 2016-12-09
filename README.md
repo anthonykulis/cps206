@@ -9,6 +9,8 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 
 ### Advanced Java Contstruct Concepts (1 to 3 weeks)
 * Exceptions, Recursion, Iterators, leveraging existing java 8 API, using generic classes.
+* Introduces UML for the purpose of *swarming* a programming problem/feature.
+* Introcution to unit testing with JUnit (pending software approval from school).
 
 ### Basic Classes (1 week)
 * Covers keywords, basic theory, construction, and using. 
