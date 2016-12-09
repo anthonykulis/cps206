@@ -12,6 +12,7 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 
 ### Introduction to Versioning
 * Introduces [Git and Github](git/) for code versioning using commit, pull, push.
+* Git and Github **are not required** for this course, but it is **highly suggested** you signup for [github](github.com) and start to use basic versioning for your source code.
 
 ### Advanced Java Construct Concepts (1 to 3 weeks)
 * [Exceptions](advanced_java_concepts/exceptions.md), [Recursion](advanced_java_concepts/recursion.md), [Iterators](advanced_java_concepts/iterators.md), leveraging existing [java 8 API](advanced_java_concepts/java8api.md), using [generic classes](advanced_java_concepts/generic_classes.md).
@@ -40,4 +41,4 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 * How to use interfaces in polymorphism, applying the Interface segregation principle, and using java 8 lambdas in interfaces. 
 
 ### [Advanced OOP Survey](advanced_survey_topics) if time permits (0 to 4 weeks)
-* Topics may include socket i/o, web, 3rd party queues, SaaS.
+* Topics may include socket i/o, web, 3rd party queues, Software-as-a-Service (Saas).
