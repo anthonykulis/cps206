@@ -23,6 +23,11 @@ To change drives (one letter to another). I am using `e` as an example. You need
     cd e:
     
    
+## Go up a directory
+Sometimes we go too far. If you find yourself needing to go up a directory, simply use
+
+    cd ..
+    
 ## Run a java application
 While in the current directory that contains the `myApplication.class` file you wish to run, type
 
