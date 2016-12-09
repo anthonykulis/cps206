@@ -41,4 +41,4 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 * How to use interfaces in polymorphism, applying the Interface segregation principle, and using java 8 lambdas in interfaces. 
 
 ### [Advanced OOP Survey](advanced_survey_topics) if time permits (0 to 4 weeks)
-* Topics may include socket i/o, web, 3rd party queues, Software-as-a-Service (Saas).
+* Topics may include exciting concepts such as socket i/o, web, or modern tools such as 3rd party queues, Software-as-a-Service (Saas).
