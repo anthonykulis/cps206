@@ -23,7 +23,7 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 * Covers keywords, basic theory such as [encapsulation](oop_pillars/encapsulation), construction, and using. 
 
 ### [Advanced Classes](classes/advanced) (1 week)
-* Covers principles of declartive programming, Single use purpose, Open/Closed priniciple, DRY
+* Covers principles of declartive programming, Single use purpose, Open/Closed priniciple, DRY, immutable vs mutable objects, singleton classes.
 
 ### [Basic Inheritance](oop_pillars/inheritance/basic) (2 to 3 weeks)
 * How to extend objects enforcing the DRY principle by leveraging proper abstractions
