@@ -4,7 +4,18 @@ JALC CPS206 Course Notes, Code Examples, [Homeworks](homeworks/), and [Labs](lab
 ## Objectives
 Introduce the 4 pillars of OOP ([Encapsulation](oop_pillars/encapsulation), [Abstraction](oop_pillars/abstraction), [Inheritance](oop_pillars/inheritance), and [Polymorphism](oop_pillars/polymorphism)), cover when, where, and why, and how to leverage the pillars, and introduce professional coding standards and concepts found in many enterprise systems.
 
-## Tenative Schedule
+
+## Expectations
+* [Command line usage](cheat_sheets/cmdline.md) will be required.
+* Expect to write lots of code.
+* You will be tested on application of theory. Memorization of code is useless. Writing code is the only way you will learn to apply the theory. All topics taught in this class can be applied to any OOP language, project, etc. Feel free to experiment with your own ideas. It will only make you better.
+* While I understand your fundamentals are new to you, you will be expected to be competent enough to reference material, e.g. google, when a language construct eludes you. Of course you may ask for help.
+* Work in teams. Work in teams. Work in teams. Did I emphasize you should work in teams? This doesn't mean you copy off one another, but it does mean you work as a team.
+* Git is not required, but I cannot emphasize enough that you should use it. Assuming the IT department approves it install, commit your work often. If you decide to use git and version your code, you will soon realize the benefits of advanced topics such as branching, forking, and merging. As you become competent with the basics of commit, add, push, pull, I can introduce you to those topics on a one-to-one basis.
+* I am demanding. I want you to succeed. I firmly believe that upon completion of cps215 you are qualified enough for an entry level software engineer position. If you decide to take your degree further, you will be the top of your class if you buy into my expectations and principles. 
+
+
+## Tentative Schedule
 We will reveiw CPS176 in full. Then we will cover the following are the core topics to OOP while learning standard enterprise patterns of behavior. Finally, if time permits, we will cover advanced java topics applying the skills you have learned throughtout the semester.
 
 ### Review of [CPS176](https://github.com/anthonykulis/cps176) (1 to 3 weeks)
