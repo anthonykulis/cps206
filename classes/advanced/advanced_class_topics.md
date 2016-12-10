@@ -161,7 +161,8 @@ public static void main(String[] args){
 	if(args.length){
 	    di.commandDogTo(args[0]);
 	} else {
-		di.askUserForDogSound();
+		String sound = di.askUserForDogSound();
+		di.commandDogTo(sound);
 	}
 	
 }
@@ -172,7 +173,7 @@ Single Use Purpose code will probably land you the job with a higher starting pa
 
 ## Open/Closed Principle
 
-Taking straight from [wikipedia](https://en.wikipedia.org/wiki/Open/closed_principle), "In object-oriented programming, the open/closed principle states "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification"; that is, such an entity can allow its behaviour to be extended without modifying its source code."
+Taking straight from [wikipedia](https://en.wikipedia.org/wiki/Open/closed_principle), *In object-oriented programming, the open/closed principle states "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification"; that is, such an entity can allow its behaviour to be extended without modifying its source code.*
 
 This will make much more sense when we get into inheritance, but what it means is that our source is open to be 
 extended, but closed to modification. This means, as soon as we publish it, we should not be changing its core 
@@ -228,7 +229,7 @@ public class ImmutatblePOJO {
 }
 ```
 
-By using the keyword `final` in the declaration of the POJO, I prevent it from ever changing after it has been 
+By using the keyword `final` in the declaration of the `num`, I prevent it from ever changing after it has been 
 created. Of course, during the time of construction the member variable hasn't been created, so I can set it there. 
 But once I exit the constructor, that `num` is as `num` is until the garbage collector picks it up.
 

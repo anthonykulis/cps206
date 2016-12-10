@@ -610,6 +610,22 @@ Now if the user calls upon our divide method, they will have to wrap it in a `tr
         System.exit(1);
     }
 
+## Overloading Methods
+There will be times when a class requires more than one method of the same same. Let us use our `divide` method as an example. It makes total sense to also be able to pass the numerator and the denominator when calling divide, but yet we may still want
+ keep the original. This would require us to overload the method.
+ 
+```java
+public double divide(){ 
+	// our old implementation
+}
+
+public double divide(int num, int denom){
+	return (num * 1.0)/denom;
+}
+```
+
+Here, we have two methods named `divide`, but we have different parameters. As long as the parameters are unambiguous, eg they differ in parameter types, we can have as many versions of the same method we wish. When we call the method, java will automatically resolve the appropriate method as per the argument type.
+
 ## Basic Class Conclusion
 We see we have four major types of class visibility: public, protected, package-private, and private. We also learned
  about a POJO. We learned that POJO has member variables and accessors and mutators. We also learned we can write 
