@@ -42,7 +42,7 @@ class ChildClass extends ParentClass implements SomeInterface {
 }
 ```
 
-`ChildClass` here *is-a* `ParentClass`. It also *is-a* `Serializable` class, and it also *is-a* `Comparable` class. 
+`ChildClass` here *is-a* `ParentClass`. It also *is-a* `SomeInterface` class. 
 This means all the following is legal.
 
     ChildClass<String> child = new ChildClass<>();
