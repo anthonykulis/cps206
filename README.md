@@ -13,6 +13,12 @@ Introduce the 4 pillars of OOP ([Encapsulation](oop_pillars/encapsulation), [Abs
 * Work in teams. Work in teams. Work in teams. Did I emphasize you should work in teams? This doesn't mean you copy off one another, but it does mean you work as a team.
 * Git is not required, but I cannot emphasize enough that you should use it. Assuming the IT department approves the install, commit your work often. If you decide to use git and version your code, you will soon realize the benefits of advanced topics such as branching, forking, and merging. As you become competent with the basics of commit, add, push, pull, I can introduce you to those more advanced topics on a one-to-one basis.
 * I am demanding. I want you to succeed. I firmly believe that upon completion of cps215 you are qualified enough for an entry level software engineer position. If you decide to take your degree further, you will be the top of your class if you buy into my expectations and principles. 
+* The depth I will take this course will be on theory alone. There will be many nuances that probably will not be 
+covered. This is my caveat to you. I figured out a long time ago that trying to memorize every feature of every topic
+ is nearly impossible and in a week you, or I, will totally forget it. So it is a lose-lose for me to waste time 
+ teaching every nook and cranny and you memorizing just to forget. My approach instead is a win-win. I will give you 
+ more than enough to write spectacular code, you will write plenty of code to learn those nuances on your own. By you
+  writing lots of code, you become a great programmer. That is a win-win for sure.
 
 
 ## Tentative Schedule
