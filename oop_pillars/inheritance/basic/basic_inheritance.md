@@ -248,7 +248,7 @@ class Child extends Parent {
 	}
 	
 	String sayName(){ 
-		super();
+		super.sayName();
 		System.out.println("If no one is around you, say baby I love you");
 	}
 }
