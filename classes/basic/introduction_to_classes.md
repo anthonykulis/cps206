@@ -441,10 +441,10 @@ By restricting access to the default constructor we as the producer of the POJO 
 
 ## POJO Conclusion
 This is it for our POJO. If we added methods that do specific things, like a `Bottle` having a `pour` method, this is
- no longer plain. There is one modification we can make still that will make our POJO a whole lot better. Let me 
+ no longer a plain old java object. There is one modification we can make still that will make our POJO a whole lot better. Let me 
  cover that.
  
- ### Returning the instance
+### Returning the instance
  
  Imagine I have a few other variables to set. Look to my example.
  
