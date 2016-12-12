@@ -241,9 +241,8 @@ public class POJO {
 }
 ```
 
-Pretty simple concept, right? Of course I can visibility if I needed, but if I restrict all the way to `private` I 
-become a useless class again. Set to `protected` for that limited access. Or just omit any visibility to give access 
-to only the package.
+Pretty simple concept, right? Of course I can restrict visibility if I needed, but if I restrict all the way to `private` I 
+become a useless class again. Besides `public`, you can set to `protected` for that limited package and subsclass access. Or just omit any visibility to give access to only the package.
 
 ### Mutators
 Again, as the name implies, mutators allow me to modify the value of the variable. Again, also, they have a 
