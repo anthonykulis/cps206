@@ -61,13 +61,13 @@ lets think about this a bit different with upper bounds.
 
 ### Upper Bound
 The opposite of a lower bound is an upper bound. Imagine with our `Rectangle` example we created a class that can now
- sort any rectangle, even a square, but it can only sort a these four sided things. We could set an upper bound.
+ sort any rectangle, even a square, but it can only sort these four sided things. We could set an upper bound.
  
 ```java
 class OurImprovedRectangleSorter<E extends Rectangle>{}
 ```
 
-Now with the `<E extends Rectangle>`, we are saying we accept any `E` *as long as it **is-a** Rectangle`*, and hence,
+Now with the `<E extends Rectangle>`, we are saying we accept any `E` *as long as it *is-a* Rectangle`*, and hence,
  we can now "sort" squares.
  
 ## Conclusion
