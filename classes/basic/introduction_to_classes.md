@@ -607,7 +607,6 @@ public class Divide {
 But there is a serious problem here. Do you see it? Let me give a code example that will break the system.
 
     Divide d = new Divide(3, 0);
-    d.setNum(3);
     d.divide();
     
 Now it is obvious. In our constructor we set `denom` to 0. 3/0 rips apart the universe. We have to handle 
@@ -625,8 +624,7 @@ Now if the user calls upon our divide method, they will have to wrap it in a `tr
 
     
     try {
-        Divide d = new Divide();
-        d.setNum(3);
+        Divide d = new Divide(3,0);
         d.divide();
     } catch (ArtihmeticException ae){
         System.out.println("Whoops. It broke");
