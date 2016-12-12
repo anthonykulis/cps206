@@ -5,7 +5,7 @@ Programming. This implies classes are *heavily* used in Java.
 ## Concepts of Classes
 The entire idea behind a class is to store heterogeneous content into a structure. This structure is called a *class*
  and that content can be any primitive or class, including instances of the class itself. We call this content 
- *properties* or *member variables.
+ *properties* or *member variables*.
  
  A class also has methods to act upon those properties. Of course, we do not need methods, to create a class, nor do 
  we need properties. But without methods, the class is fairly pointless, and without properties, it is completely 
