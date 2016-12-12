@@ -528,7 +528,11 @@ instance, than that means I can use the instance to access its methods. Watch th
 Totally legal code. `p.setNum(3)` returns `p`, so upon return, I can mentally replace `p.setNum(3).setDenom(4)` with 
 `p.setDenom(4)`. In fact, that is what the compiler is doing as well. After it executes the `setNum` method, it 
 replaces the existing code with the instance, then calling the method `setDenom`. Try it sometime. Some people do not
- like it. When you get to lambdas in csp216, you will appreciate it.
+ like it. When you get to lambdas in csp216, you will appreciate it. You also do this with any data type the method returns. Look at my example.
+ 
+ 	myClass.getsAString().toUpperCase();
+ 	
+Here, `myClass` has a method named `getsAString` which, obviously, returns a `String`. With that return, I can now call upon the `String` classes `toUpperCase` method. You can chain together as many methods as you like as long as each preceding method returns a type. If it returns `void`, the chaining cannot continue.
  
  
 ## Breaking out of the POJO
