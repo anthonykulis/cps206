@@ -196,7 +196,7 @@ set it to final, it becomes a constant, so that *may* be okay. Again, this is a 
 
 #### Private
 Private visibility, as in the class, means only the class can access this variable. And that is good! The only way 
-the variable can change or be read is via a `public` method belonging to the class.  This enforces our 
+the variable can change or be read is via a non-private method belonging to the class.  This enforces our 
 `encapsulation` principle and is mandatory for in this class (and your future jobs).
 
 Let us update our code once again.
