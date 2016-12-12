@@ -478,9 +478,9 @@ public void setDenom(int denom){ this.denom = denom; }
 You see I created `denom` as well as tied it in with an accessor and mutator. Is it funny how you thought I was just saying `num` for number before and now you realize it was for `numerator`? I think so. But back to the topic. I can do the following 
 just fine.
    
-   POJO p = new POJO();
-   p.setNum(3);
-   p.setDenom(4);
+   	POJO p = new POJO();
+   	p.setNum(3);
+   	p.setDenom(4);
    
 But that is way too much extra code for my liking, so let us modify our mutators to do something cool.
 
