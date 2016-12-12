@@ -575,9 +575,7 @@ public class Divide {
     private int num;
     private int denom;
     
-    public Divide(){
-        this.setNum(0);
-        this.setDenom(0);
+    private Divide(){
     }
     
     public Divide(int num, int denom){
@@ -608,11 +606,11 @@ public class Divide {
 
 But there is a serious problem here. Do you see it? Let me give a code example that will break the system.
 
-    Divide d = new Divide();
+    Divide d = new Divide(3, 0);
     d.setNum(3);
     d.divide();
     
-Now it is obvious. In our default constructor we set `denom` to 0. 3/0 rips apart the universe. We have to handle 
+Now it is obvious. In our constructor we set `denom` to 0. 3/0 rips apart the universe. We have to handle 
 this `ArithmeticException`. To do so, `divide` needs to throw that exception if `denom` is 0. Lets update the 
 `divide` method.
 
