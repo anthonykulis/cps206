@@ -1,8 +1,7 @@
 # Basic Inheritance
-Following the principle of [abstraction](/oop_pillars/abstraction) we get the next principle of *inheritance*. They 
-go hand in had. Since the idea of abstraction is *remove* common methods and properties from like classes and put 
+Following the principle of [abstraction](/oop_pillars/abstraction) we get the next principle of *inheritance*. They go hand in hand. Since the idea of abstraction is *remove* common methods and properties from like classes and put 
 them into a parent class, then it makes sense that the child classes can inherit those properties. This is no 
-different in concept than how you inherit properties from your parents, them their parents, and so on. Over time, you
+different in concept than how you inherit properties from your parents, them from their parents, and so on. Over time, you
  have inherited the properties of many generations before you. This is what OOP strives to do. It has its problems 
  though.
  
@@ -90,7 +89,7 @@ class Dog extends DomesticAnimal {}
 ```
 
 Ok that is better. I believe domestic animals have a `breed`. What about `sex` though. All animals have a sex. Do all
- animals run? A snake doesnt run. It is an animal. So we cannot move that to animal. But non-domestic animals do run.
+ animals run? A snake doesn't run. It is an animal. So we cannot move that to animal. But non-domestic animals do run.
   So that has to give too. Lets first handle `sex`.
   
 ```java
@@ -113,7 +112,7 @@ Before we dive into the `run` issue, lets look at our inheritance chain so far.
 	Animal -> DomesticAnimal -> {Cat, Dog}
 	
 Ok. Lets add a `Snake` to the mix. Lets also assume only right minded people exist in this world and none of them 
-keep snakes for pets. Just for the sake of example! Please no emails.
+keep snakes for pets. This is just for the sake of example! Please no emails.
 
 ```java
 class Snake extends Animal {
@@ -162,14 +161,31 @@ class Cat extends DomesticAnimal {
 }
 ```
 
-Ok, good. We got this covered now. Or do we. I have a pet fish. Fish do not run. Fish do not have legs. I am stuck. 
+And while I am at it, we should put `Dog` and `Cat` into a `Pet`. This will allow me to have `Cow`, `Horse`, etc as domestic animals, but not as a `Pet`.
+
+
+```java
+class Pet extends DomesticAnimal {
+	
+}
+
+class Dog extends Pet {
+	
+}
+
+class Cat extends Pet {
+	
+}
+```
+
+Ok, good. We got this covered now. Or do we? I have a pet fish. Fish do not run. Fish do not have legs. I am stuck. This means if I go all the way up to `Animal`, I have branch off into `LeggedAnimal` and work my way down to `Pet`. Yet a `Fish` is a pet and it is not a `LeggedAnimal`. Maybe its not even a `DomesticAnimal`. This means I would have to have another inheritance chain branching from `Animal` that resolves into `Pet`, that is not `LeggedAnimal` and maybe not even `DomesticAnimal`, yet I cannot have two classes of `Pet`. Everything is broken now.
+
 Welcome to the nightmare. Fortunately for us, we alleviate this with *interfaces* and restrict our inheritance to 
 small features that we will know will not conflict later, like `sex`.
 
 ## Forcing methods to be created via inheritance of classes.
-Let us drop this whole `run` nightmare. We will understand how to handle it properly when we get to `Interfaces`. For
- now, lets just focus on `sex` and add a method to `Animal` called `procreate`. Yes, it is a *science* class, no 
- laughing. 
+Let us drop this whole inheritance nightmare issue for now. We will understand how to handle it properly when we get to `Interfaces`. For
+ now, lets just focus on `sex` and add a method to `Animal` called `procreate`. Yes, this is a *science* class, so no laughing. 
  
 We know *every* animal has to procreate for the species to survive, but literally pretty much every animal procreates
  differently. So there is no way to define how that method should work, but we want *every* animal species to survive
