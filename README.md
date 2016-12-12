@@ -42,6 +42,8 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 ### [Advanced Classes](classes/advanced) (1 week)
 * Covers principles of declarative programming, Single use purpose, Open/Closed principle, DRY, immutable vs mutable objects, singleton classes.
 
+### Exam 1
+
 ### [Basic Inheritance](oop_pillars/inheritance/basic) (2 to 3 weeks)
 * How to extend objects enforcing the DRY principle by leveraging proper abstractions
 
@@ -51,11 +53,18 @@ We will reveiw CPS176 in full. Then we will cover the following are the core top
 ### [Advanced Inheritance](oop_pillars/inheritance/advanced) (2 to 3 weeks)
 * Leveraging Object inheritance for the purpose of polymorphism
 
+### Exam 2
+
 ### [Basic Interfaces](interfaces/basic) (1 week)
 * How to create and when to use interfaces.
 
 ### [Advanced Interfaces](interfaces/advanced) (2 to 3 weeks)
 * How to use interfaces in polymorphism, applying the Interface segregation principle, and using java 8 lambdas in interfaces. 
 
+
+### Exam 3
+
 ### [Advanced OOP Survey](advanced_survey_topics) if time permits (0 to 4 weeks)
 * Topics may include exciting concepts such as socket i/o, web, or modern tools such as 3rd party queues, Software-as-a-Service (Saas).
+
+### Final (Optional - counts as make up test)
