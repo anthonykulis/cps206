@@ -350,6 +350,7 @@ public class POJO {
 		// do nothing
 	}
 	
+	
 	public POJO(int num){
 		this.num = num;
 	}
@@ -416,6 +417,27 @@ frequently, and this is only a trivial example. But let me also ask another ques
 also fit? It fits `encapsulation`. In encapsulation, we *encapsulate* imperative logic into a method so the work of 
 understanding how `num` is set belongs to `setNum`, which by the way, is also `declarative`. But more on that later. 
 
+If you have absorbed what I just said, you may also be thinking that setting `num` to 0 without user consent is spurious, and you would be correct. A better way to handle this example would be to set the default constructor to private so no one outside this class can use it. Lets do it.
+
+```java
+package classes.basic;
+
+public class POJO {
+	private int num;
+	
+	/* Restrict access to default constructor */
+	private POJO(){}
+	
+	public POJO(int num){
+		this.setNum(num);
+	}
+	
+	public int getNum(){ return num; }
+	public void setNum(int num){ this.num = num; }
+}
+```
+
+By restricting access to the default constructor we as the producer of the POJO class make no assumptions on how the user should instantiate. We remove the *knowledge* base of using our class such that the user needs to know if "If I instantiate with this constructor, it behaves one way. And if I instantiate with the other constructor, it behaves another way". This is a good thing. Try to keep this in mind.
 
 ## POJO Conclusion
 This is it for our POJO. If we added methods that do specific things, like a `Bottle` having a `pour` method, this is
