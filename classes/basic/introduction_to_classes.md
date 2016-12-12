@@ -437,7 +437,7 @@ public class POJO {
 }
 ```
 
-By restricting access to the default constructor we as the producer of the POJO class make no assumptions on how the user should instantiate. We remove the *knowledge base* required to use our class. Now the user doesn't need to know if "If I instantiate with this constructor, it behaves one way. And if I instantiate with the other constructor, it behaves another way". This is a good thing. Try to keep this in mind.
+By restricting access to the default constructor we as the producer of the POJO class make no assumptions on how the user should instantiate. We remove the *knowledge base* required to use our class. Now the user doesn't need to know that "If I instantiate with this constructor, it behaves one way. And if I instantiate with the other constructor, it behaves another way". This is a good thing. Try to keep this in mind.
 
 ## POJO Conclusion
 This is it for our POJO. If we added methods that do specific things, like a `Bottle` having a `pour` method, this is
