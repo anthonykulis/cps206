@@ -29,12 +29,12 @@ multiplied by the subsequent lesser number until we reach one. It is denoted by 
 
 Our method will take any `long` and compute the factorial. So lets imagine we want 3! and go through the steps.
 
-1. First we call the method with `num == 3`
+1. First we call the method with `num` assigned to `3`
 2. Check. Is 3 < 1? It is not, so continue onwards.
 3. Check. Is 3 == 1? It is not, so continue onwards.
 4. Here is the tail recursion. We are telling it to return 3 * the methods next return value when passing it 2.
 5. Check. Is 2 < 1? No, continue.
-6. Check. Is 2 == 1? NO, continue.
+6. Check. Is 2 == 1? No, continue.
 7. Now, again, we know this method is taking 2 * the return result of the next call with 1.
 8. Check. Is 1 < 1? No. Continue.
 9. Check. Is 1 == 1? Yes, return 1.
@@ -43,8 +43,7 @@ Now that we are no longer calling the method, the computer will go back up the *
 called the method again with 1, but it was 2 * `factorial(1)`. `factorial(1)` returned a 1, so it gets replaced. We 
 now have 2 * 1. 
 
-Next, dont forget, we called `factorial(2)` first. This was actually `3 * factorial(2)`. `factorial(2)` returned us 2
- * 1. So we can replace that factorial part again, getting 3 * 2 * 1. And since 3 * 2 * 1 == 3!, we used the code to 
+Next, dont forget, we called `factorial(2)` first. This was actually `3 * factorial(2)`. `factorial(2)` returned us 2 * 1. So we can replace that factorial part again, getting 3 * 2 * 1. And since 3 * 2 * 1 == 3!, we used the code to 
  compute the math problem.
  
 ## Indirect Recursion. 
