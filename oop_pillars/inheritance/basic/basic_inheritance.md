@@ -188,7 +188,7 @@ Let us drop this whole inheritance nightmare issue for now. We will understand h
  now, lets just focus on `sex` and add a method to `Animal` called `procreate`. Yes, this is a *science* class, so no laughing. 
  
 We know *every* animal has to procreate for the species to survive, but literally pretty much every animal procreates
- differently. So there is no way to define how that method should work, but we want *every* animal species to survive
+ differently. So there is no way to define how that method should work, but we want *every* animal species to survive, and to do so, it needs to procreate.
  . To handle this, we will force every immediate child class to implement their own version of procreation.
  
 ```java
@@ -272,6 +272,6 @@ class Child extends Parent {
 Here, if we only instantiated `Parent`, it is pretty obvious what is happening when we construct or call `sayName`. 
 But if we instantiate `Child`, on the constructor, we leverage the parents code to set the name, and on `sayName`, 
 which overloads the parent, we call the parents method which prints `Say my name, Say my name`, then we print `If no 
-one is around you say baby I love you`. Its that easy.
+one is around you say baby I love you`. Its that easy, but one caveat, anytime you call `super`, either as a constructor or to access a method, it must come first. No exceptions.
 
 
