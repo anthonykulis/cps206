@@ -106,7 +106,7 @@ Now somewhere later, I can create the POJO. By the way, a POJO stands for Plain 
     POJO pojo = new POJO();
     
 Since I instantiated the POJO, and with this property as a `package-private` member variable, and no methods, I can work
- on it as an *instance variable*.
+ on its *instance variable*.
  
     pojo.num++;
     
@@ -137,7 +137,7 @@ it, my code needs to change to:
 ### Variable Visibility
 I hinted that this `num` variable was `package-private`. It follows class creation that since we never set a 
 visibility modifier it will default. But typically we never want to expose a variable that can change. This can lead 
-to unpredictable behavior in our code. You've seen *some what* visible, now lets look at totally exposed.
+to unpredictable behavior in our code. You've seen this example as *some what* visible, now lets look at totally exposed.
 
 #### Public 
 
@@ -185,7 +185,7 @@ We can also set a variable to `protected` visibility. Here is a sample.
 package classes.basic;
 
 public class POJO {
-	protectd int num = 3;
+	protected int num = 3;
 }
 ```
 
