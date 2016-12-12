@@ -67,7 +67,7 @@ The opposite of a lower bound is an upper bound. Imagine with our `Rectangle` ex
 class OurImprovedRectangleSorter<E extends Rectangle>{}
 ```
 
-Now with the `<E extends Rectangle>`, we are saying we accept any `E` *as long as it *is-a* Rectangle`*, and hence,
+Now with the `<E extends Rectangle>`, we are saying we accept any `E` *as long as it is-a `Rectangle`*, and hence,
  we can now "sort" squares.
  
 ## Conclusion
