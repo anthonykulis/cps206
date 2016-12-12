@@ -27,7 +27,7 @@ In the above `factorial` method, we simply will compute the factorial of a numbe
 multiplied by the subsequent lesser number until we reach one. It is denoted by the `!` symbol. So 5! is 5 * 4 * 3 * 
 2 * 1.
 
-Our method will take any long and compute the factorial. So lets imagine we want 3! and go through the steps.
+Our method will take any `long` and compute the factorial. So lets imagine we want 3! and go through the steps.
 
 1. First we call the method with `num == 3`
 2. Check. Is 3 < 1? It is not, so continue onwards.

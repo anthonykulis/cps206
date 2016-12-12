@@ -10,7 +10,7 @@ public String makeUppercase(String lowercase) throws NullPointerException{
 }
 ```
 
-In the above example, while we could do an `if/else` to check for `null`, and if it was `null`, return null, throwing the exception allows the user of our class to handle this exception with a `try/catch/finally` statement. In some cases, this makes more sense than requiring the user of our class to check for null by using `if/then` statement. 
+In the above example, while we could do an `if/else` to check for `null`, and if it was `null`, return null, but throwing the exception allows the user of our class to handle this exception with a `try/catch/finally` statement. In some cases, this makes more sense than requiring the user of our class to check for null by using `if/then` statement. 
 
 As you can see by my ambiguity on what to use, this is a design decision. Since this class is about designing classes and interfaces, we will learn quickly that other people will use our classes and that the decision on what to do varies wildly. Being said, we will always throw an exception when our method doesn't meet the criteria required by the method.
 
@@ -29,7 +29,7 @@ try {
 If the previous example we used `try` and `catch` to *try* a method, and when it failed *catch* the exception. Let's look at `try` and `catch` now.
 
 ## Try
-`try` is a java keyword that *attempts* to perform its scope. The scope of try is everything inside `{` and the trailing `}`. If any of that code in scope encounters a thrown exception, it will immediately break scope and find the appropriate catch.
+`try` is a java keyword that *attempts* to perform its scope. The scope of `try` is everything inside `{` and the trailing `}`. If any of that code in scope encounters a thrown exception, it will immediately break scope and find the appropriate catch.
 
 ## Catch
 `catch` is the pairing keyword to `try`. You cannot have a `try` without a following `catch`, and you cannot have a `catch` without a preceding `try`. You can however, have multiple `catch` statements for one `try`.
