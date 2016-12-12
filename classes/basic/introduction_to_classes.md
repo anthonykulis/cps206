@@ -647,6 +647,17 @@ public double divide(int num, int denom){
 
 Here, we have two methods named `divide`, but we have different parameters. As long as the parameters are unambiguous, eg they differ in parameter types, we can have as many versions of the same method we wish. When we call the method, java will automatically resolve the appropriate method as per the argument type.
 
+	// set the num and denom
+	Divide d = new Divide(3,3);
+	
+	// divide with those passed values
+	d.divide();
+	
+	// divide with 15/3
+	d.divide(15,3);
+	
+In the above example, we construct our object with values 3 and 3. Then we divide. When we use the divide with no arguments, we use the passed arguments in the constructor just as before. But now that we *overloaded* the divide method can call it again with different values. Both work, its just what number they work on are decided by the methods signature. 
+	
 ## Basic Class Conclusion
 We see we have four major types of class visibility: public, protected, package-private, and private. We also learned
  about a POJO. We learned that POJO has member variables and accessors and mutators. We also learned we can write 
