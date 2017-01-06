@@ -10,6 +10,7 @@ Principle and to use Interfaces in polymorphism.
 * Revisit your POJO, adding action methods via the interface mechanism.
 	* Caveat - I understand some actions may be just impossible to implement in a reasonable time. If you feel this 
     	is the case, confer with me on how far, if at all, you need to take the action.
+    	
 ### Example
 
 ```java
