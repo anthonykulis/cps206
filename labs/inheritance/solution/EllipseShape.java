@@ -10,27 +10,27 @@ abstract class EllipseShape extends TwoDimensionalShape {
 		this.setMajorAxis(majorAxis);
 	}
 
-	public double getMinorAxis() {
+	public final double getMinorAxis() {
 		return minorAxis;
 	}
 
-	public void setMinorAxis(double minorAxis) {
+	public final void setMinorAxis(double minorAxis) {
 		this.minorAxis = minorAxis;
 	}
 
-	public double getMajorAxis() {
+	public final double getMajorAxis() {
 		return majorAxis;
 	}
 
-	public void setMajorAxis(double majorAxis) {
+	public final void setMajorAxis(double majorAxis) {
 		this.majorAxis = majorAxis;
 	}
 
-	public double area(){ return this.getMajorAxis() * this.getMinorAxis() * Math.PI; }
+	public final double area(){ return this.getMajorAxis() * this.getMinorAxis() * Math.PI; }
 
 	abstract double circumference();
 
-	public String toString(){
+	public final String toString(){
 		return "majorAxis: " + majorAxis + "  minorAxis: " + minorAxis + "   area: " + this.area();
 	}
 }

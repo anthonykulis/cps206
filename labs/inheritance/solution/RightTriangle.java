@@ -6,7 +6,7 @@ public final class RightTriangle extends Triangle {
 		super(height, base);
 	}
 
-	public double perimeter(){
+	public final double perimeter(){
 		double height = this.getHeight();
 		double width = this.getWidth();
 		double hypotenuse = Math.sqrt(height * height + width * width);

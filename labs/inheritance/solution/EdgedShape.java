@@ -10,26 +10,26 @@ abstract class EdgedShape extends TwoDimensionalShape {
 		this.setWidth(width);
 	}
 
-	public double getHeight() {
+	public final double getHeight() {
 		return height;
 	}
 
-	public void setHeight(double height) {
+	public final void setHeight(double height) {
 		this.height = height;
 	}
 
-	public double getWidth() {
+	public final double getWidth() {
 		return width;
 	}
 
-	public void setWidth(double width) {
+	public final void setWidth(double width) {
 		this.width = width;
 	}
 
 	abstract double area();
 	abstract double perimeter();
 
-	public String toString(){
+	public final String toString(){
 		return "height: " + height + "  width: " + width + "   area: " + this.area();
 	}
 }

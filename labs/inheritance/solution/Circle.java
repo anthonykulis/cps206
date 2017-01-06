@@ -6,7 +6,7 @@ public final class Circle extends Ellipse {
 		super(radius, radius);
 	}
 
-	public double circumference(){ return (this.getMinorAxis() + this.getMajorAxis()) * Math.PI; }
+	public final double circumference(){ return (this.getMinorAxis() + this.getMajorAxis()) * Math.PI; }
 
 	/* Tests */
 	void test(){

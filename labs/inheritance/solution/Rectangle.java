@@ -6,8 +6,8 @@ public class Rectangle extends EdgedShape {
 		super(height, width);
 	}
 
-	public double area(){ return this.getHeight() * this.getWidth(); }
-	public double perimeter(){ return this.getHeight() * 2 + this.getWidth() * 2; }
+	public final double area(){ return this.getHeight() * this.getWidth(); }
+	public final double perimeter(){ return this.getHeight() * 2 + this.getWidth() * 2; }
 
 	/* Tests */
 	void test(){
