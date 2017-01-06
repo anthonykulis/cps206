@@ -4,7 +4,7 @@ abstract class TwoDimensionalShape {
 
 	abstract double area();
 
-	public boolean equals(TwoDimensionalShape other){
+	public final boolean equals(TwoDimensionalShape other){
 		return this.area() == other.area();
 	}
 
