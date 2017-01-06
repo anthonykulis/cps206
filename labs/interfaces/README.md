@@ -18,12 +18,15 @@ public interface Pourable {
 	public Liquid pour(double amount);
 }
 
-public interface CapActions {
-	public void attachCap();
-	public void detachCap();
+public interface Attachable {
+	public void attach();
+}
+
+public interface Removable {
+	public void remove();
 } 
 
-public class SodaBottle implements Pourable, CapActions {
+public class SodaBottle implements Pourable, Attachable, Removalable {
 	...
 	...
 	...
@@ -32,11 +35,11 @@ public class SodaBottle implements Pourable, CapActions {
 		// implementation
 	}
 	
-	public void attachCap(){
+	public void attach(){
 		// implementation
 	}
 	
-	public void detachCap(){
+	public void remove(){
 		//implementation
 	}
 	
@@ -55,14 +58,9 @@ class that implements your interface, you are to show polymorphism via the inter
 ### Example
 
 ```java
-public class Bucket implements Pourable {
-	private double volume;
-	private double capacity;
-	
+public class Rain implements Pourable {
 	public Liquid pour(double amount){
-		Liquid liquid = new Liquid(amount);
-		this.volume -= amount;
-		return liquid;
+		return new Liquid(amount);
 	}
 }
 ```
@@ -70,12 +68,12 @@ public class Bucket implements Pourable {
 #### Polymorphism Example
 
 	ArrayList<Pourable> pourableItems = new ArrayList<>();
-	pourableItems.add(new Bucket());
+	pourableItems.add(new Rain());
 	pourableItems.add(new SodaBottle());
 	
 	Iterator iterator = pourableItems.iterator();
 	while(iterator.hasNext()){
-		iterator.next().pour(1.0);
+		((Pourable)iterator.next()).pour(1.0);
 	}
 	
 * Of course, when demonstrating polymorphism, you may not use my example, but you are free to use list streams to 
@@ -111,6 +109,14 @@ class Color {
 	public getBlue(){ return this.blue; }
 }
 ```
+
+
+## Grading
+* You will be graded on having proper immutable features, even if its the entire class. 
+* You will be graded on having proper interfaces to describe your actions
+* You will be graded on Interface Segregation Principle.
+* You will be graded on your demonstration of polymorphism via interfaces.
+
 ## Tips 
 * Re-use your POJO lab and its tests! Do not modify your tests unless you plan on modifying the accessors (which you will not need to)
 
