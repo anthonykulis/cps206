@@ -54,6 +54,10 @@ class Color {
 	private final int blue;
 	private final int green;
 	
+	private Color(){ 
+		this.red = this.green = this.blue = 0;
+	}
+	
 	public Color(int red, int green, int blue){
 		this.red = red;
 		this.green = green;
