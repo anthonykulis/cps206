@@ -29,4 +29,8 @@ abstract class EllipseShape extends TwoDimensionalShape {
 	public double area(){ return this.getMajorAxis() * this.getMinorAxis() * Math.PI; }
 
 	abstract double circumference();
+
+	public String toString(){
+		return "majorAxis: " + majorAxis + "  minorAxis: " + minorAxis + "   area: " + this.area();
+	}
 }

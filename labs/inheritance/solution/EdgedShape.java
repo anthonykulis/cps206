@@ -28,4 +28,8 @@ abstract class EdgedShape extends TwoDimensionalShape {
 
 	abstract double area();
 	abstract double perimeter();
+
+	public String toString(){
+		return "height: " + height + "  width: " + width + "   area: " + this.area();
+	}
 }

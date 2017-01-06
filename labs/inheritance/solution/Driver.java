@@ -10,5 +10,11 @@ public class Driver {
 
 		System.out.println(square.equals(circle));
 		System.out.println(square.equals(rightTriangle));
+
+		Circle fromSquare = ExtraCredit.squareToCircle(square);
+		Square fromCircle = ExtraCredit.circleToSquare(circle);
+
+		System.out.println(fromSquare + " <<< >>> " + square);
+		System.out.println(fromCircle + " <<< >>> " + circle);
 	}
 }
