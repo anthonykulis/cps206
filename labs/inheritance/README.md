@@ -23,8 +23,8 @@ It will also demonstrate how polymorphism can be used via the open/closed princi
 now, this class should compute a *final area* method and it should provide a *final equals* method to see if the area
  of the ellipse shapes are the same.
 
-* You will define a *Triangle* class. This class should be *final* and inherit *EdgedShape*. This class will compute 
-its area, *1/2 * b * h, and provide an *equals* method to see if the triangles area of equal values.
+* You will define an *abstract Triangle* class. This class with only implement the *area* method, *1/2 * b * h*.
+* You will define a *RightTriangle* class. This class should be *final* and inherit *EdgedShape*. This class will compute its perimeter using Pythagoras' theorem.
 
 * You will define a *Rectangle* class. Again, this class should inherit *EdgedShape*. It will compute its area, *b * 
 h*, and provide an *equals* method to see if the triangles area of equal values.
