@@ -4,8 +4,8 @@ covered on a schedule, if you feel you have the skills to accomplish the lab ahe
 (and submit) them now.
 
 ## TOC
-* [CPS176 Review](/cps176review)
-* [POJO Lab](/POJO)
-* [Inheritance Lab](/Inheritance)
-* [Interface Lab](/Interfaces)
-* [Lambda Lab](/Lambda)
+* [CPS176 Review](cps176review/)
+* [POJO Lab](POJO/)
+* [Inheritance Lab](inheritance/)
+* [Interface Lab](interfaces/)
+* [Lambda Lab](lambdas/)
