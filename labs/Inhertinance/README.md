@@ -43,10 +43,8 @@ Write unit tests with 100% method coverage. You may use jUnit if you so choose, 
 *set, get, assert*. Make sure to enable assertions when testing with *java -ea MyTest*
 
 ### Part 2
-Write a class that either takes a Circle and returns a Square with the same area, or takes a Square and returns a 
-Circle with the same area. Hint, there will be round off errors. If you wish, you could use a class (not 
-primitive) to represent the decimal data type. This is a *lot* of extra work though. Feel free to simply use 
-primitives. 
+Write a class that has 2 methods which takes any of our objects and returns either a *Circle* *Square* of the same 
+area. These methods should be named `toSquare` and `toCicle`
  
 ## Run By Date
  
