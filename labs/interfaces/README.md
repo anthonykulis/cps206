@@ -118,7 +118,8 @@ class Color {
 * You will be graded on your demonstration of polymorphism via interfaces.
 
 ## Tips 
-* Re-use your POJO lab and its tests! Do not modify your tests unless you plan on modifying the accessors (which you will not need to)
+* Re-use your POJO lab and its tests! Do not modify your tests unless you plan on modifying the accessors (which you 
+may need to while you make features immutable)
 
 ## Extra Credit
 To receive the extra credit for this lab, you must write unit tests for each method! You are required to have 100% method coverage. This means one unit test to *set*, *get*, and *assert* is acceptable. 
