@@ -54,6 +54,8 @@ public class Driver {
 
 		// run until won
 		boolean atFinish = maze.isAtFinish();
+		String lastMessage = "Welcome to the maze, get ready to die!";
+
 		while(!atFinish){
 
 			// clear screen each tick
@@ -62,7 +64,7 @@ public class Driver {
 			System.out.print(ANSI_CLS + ANSI_HOME);
 			System.out.flush();
 
-			message("");
+			message(lastMessage);
 			message("Type a direction - ");
 			if(maze.isUpOpen()) message("Up is open");
 			if(maze.isDownOpen()) message("Down is open");
@@ -72,22 +74,22 @@ public class Driver {
 
 			switch(prompt("Which way do you wish to go").toLowerCase()){
 				case "up":
-					if(!maze.moveUp()) message("Up isn't open");
+					if(!maze.moveUp()) lastMessage = "Up isn't open";
 					break;
 				case "down":
-					if(!maze.moveDown()) message("Up isn't open");
+					if(!maze.moveDown()) lastMessage = "Up isn't open";
 					break;
 				case "left":
-					if(!maze.moveLeft()) message("Left isn't open");
+					if(!maze.moveLeft()) lastMessage = "Left isn't open";
 					break;
 				case "right":
-					if(!maze.moveRight()) message("Right isn't open");
+					if(!maze.moveRight()) lastMessage = "Right isn't open";
 					break;
 				case "history":
 
 					break;
 				default:
-					message("I dont know how to go that way");
+					lastMessage = "I dont know how to go that way";
 			}
 
 			atFinish = maze.isAtFinish();
