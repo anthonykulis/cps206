@@ -1,5 +1,5 @@
 # UML
-The unified Modeling Language.
+The Unified Modeling Language.
  
 ## Purpose
 Allow us to model an application before writing any code. Think of it as a cliff notes for the application. Use it to model complex applications, labeling their properties and methods.
