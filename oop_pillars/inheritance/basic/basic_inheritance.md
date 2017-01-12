@@ -1,6 +1,6 @@
 # Basic Inheritance
-Following the principle of [abstraction](/oop_pillars/abstraction) we get the next principle of *inheritance*. They go hand in hand. Since the idea of abstraction is *remove* common methods and properties from like classes and put 
-them into a parent class, then it makes sense that the child classes can inherit those properties. This is no 
+Following the principle of [abstraction](/oop_pillars/abstraction) we get the next principle of *inheritance*. They go hand in hand. Since the idea of abstraction is to *remove* common methods and properties from like classes and put 
+them into a parent class, then it makes sense that the child classes can inherit these properties from the parent. This is no 
 different in concept than how you inherit properties from your parents, them from their parents, and so on. Over time, you
  have inherited the properties of many generations before you. This is what OOP strives to do. It has its problems 
  though.
