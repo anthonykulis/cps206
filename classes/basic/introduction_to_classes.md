@@ -7,8 +7,8 @@ The entire idea behind a class is to store heterogeneous content into a structur
  and that content can be any primitive or class, including instances of the class itself. We call this content 
  *properties* or *member variables*.
  
- A class also has methods to act upon those properties. Of course, we do not need methods, to create a class, nor do 
- we need properties. But without methods, the class is fairly pointless, and without properties, it is completely 
+ A class also has methods to act upon those properties. Of course, we do not need methods to create a class, nor do 
+ we need properties, but without methods, the class is fairly pointless, and without properties, it is completely 
  useless.
  
  But taking that completely useless concept, the only thing we need to create a class is a the keyword `class` and a 
@@ -209,7 +209,7 @@ public class POJO {
 }
 ```
 
-Ok. So not that is it updated, I can no longer do the following
+Ok. So now that is it updated, I can no longer do the following
 
     POJO pojo = new POJO();
     pojo.num++;
@@ -220,7 +220,7 @@ And this is because `num` is private. So to access it, I need to introduce `meth
 You are expected to know methods from cps176. You are also expected to know how to pass arguments and set parameters,
  so if you need a refresher, visit my [methods](https://github.com/anthonykulis/cps176/tree/master/methods) notes in the cps176 repo.
  
-Here we will look at what methods to create and why to create them. But before I get too involved, I want only 
+Here we will look at what methods to create and why to create them. But before I get too involved, I only want to 
 introduce accessors and mutators so we can close off that `private` access variable concept.
 
 

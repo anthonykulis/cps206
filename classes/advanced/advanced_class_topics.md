@@ -105,7 +105,7 @@ develop your source code.
 
 
 ## Single Use Purpose
-Single Use Purpose is just that, your code has a single purse. This means your method has a single purpose, your 
+Single Use Purpose is just that, your code has a single purpose. This means your method has a single purpose, your 
 class has a single purpose, etc. Let us revisit our `askUserForDogSound` example by adding that method into `Dog`.
 
 ```java
@@ -276,4 +276,4 @@ on it.
     Singleton a = Singleton.getInstance();
     Singleton b = Singleton.getInstance(); 
     a.increment();
-    System.out.println(b.getNum();
+    System.out.println(b.getNum());
