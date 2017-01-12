@@ -73,7 +73,7 @@ class DoesSomethingSpecial {
 }
 ```
 
-We can use this classes `doIT` method passing an instace of `ChildClass`. Because we knew ahead of time that 
+We can use this classes `doIt` method passing an instance of `ChildClass`. Because we knew ahead of time that 
 `ChildClass` implements `SomeInterface`, we get away with it. But what happens when I create another class.
 
 ```java
