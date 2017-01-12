@@ -1,8 +1,11 @@
 # cps206
 JALC CPS206 Course Notes, Code Examples, [Homeworks](homeworks/), and [Labs](labs/)
 
+### [Syllabus](https://goo.gl/AqVQsU)
+
 ## Objectives
 Introduce the 4 pillars of OOP ([Encapsulation](oop_pillars/encapsulation), [Abstraction](oop_pillars/abstraction), [Inheritance](oop_pillars/inheritance), and [Polymorphism](oop_pillars/polymorphism)), cover when, where, and why, and how to leverage the pillars, and introduce professional coding standards and concepts found in many enterprise systems.
+
 
 
 ## Expectations
