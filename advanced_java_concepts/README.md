@@ -7,6 +7,6 @@ We will revisit this frequently and use this directory as a place holder to stor
 * [Generic Classes](generic_classes.md)
 * [Iterators](iterators.md)
 * [Java 8 API](java8api.md)
-* [JUNIT](junit.md)
+* [JUNIT/Unit Testing](junit.md)
 * [Recursion](recursion.md)
 * [UML](uml.md)
