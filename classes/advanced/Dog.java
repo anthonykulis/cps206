@@ -17,7 +17,7 @@ public class Dog {
 		for(int i = 0; i < quantity; i++){
 			Toolkit.getDefaultToolkit().beep();
 
-			// because some systems my not beep w/o threads sleeping
+			// because some systems my not beep w/o thread sleeping
 			// this notifies it beeped correctly
 			System.out.println("I beeped");
 		}
