@@ -14,16 +14,16 @@ public class BrokenCode {
 	}
 
 	public double toCentimeters(double inches){
-
 		// broken!!!!
 		return 3.0 * inches;
 	}
 
 	/*
-		When creating classes, if that class doesn't require a Driver, it should be tested.
+		When creating classes it should be tested.
 
 		While jUnit, Spock, etc are acceptable and encouraged, you are free to test in the
-		main method.
+		main method. We will not be submitting drivers, so the main method (of each class)
+		is where you can test as an alternative.
 
 		Use the following for an example
 	 */
