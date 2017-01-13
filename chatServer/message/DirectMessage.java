@@ -4,8 +4,8 @@ import chatServer.user.User;
 
 public class DirectMessage extends Message {
 
-	private User from;
-	private User to;
+	private final User from;
+	private final User to;
 	private boolean sent;
 
 	private DirectMessage(){
