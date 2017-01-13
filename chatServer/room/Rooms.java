@@ -19,7 +19,7 @@ public class Rooms {
 
 	public Room getRoomByName(String name){
 		List<Room> hits = rooms.parallelStream().filter(test -> test.getName().equals(name)).collect(Collectors.toList());
-		if(hits == null) return null;
+		if(hits.size() == 0) return null;
 		return hits.get(0);
 	}
 
