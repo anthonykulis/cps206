@@ -32,6 +32,8 @@ public class DirectMessage extends Message {
 		return sent;
 	}
 
+	public void markAsSent(){ this.sent = true; }
+
 	/* Tests */
 	public static void main(String... args){
 
@@ -44,5 +46,7 @@ public class DirectMessage extends Message {
 		assert from == directMessage.getFrom() : "from is not who sent it";
 		assert to == directMessage.getTo() : "to is not who should receive it";
 		assert !directMessage.isSent() : "some how the message has been sent when there is no reason to send it";
+		directMessage.markAsSent();
+		assert directMessage.isSent() : "sent message is not marked as sent";
 	}
 }
