@@ -21,7 +21,7 @@ public class Users {
 	}
 
 	public void addUser(User user) throws Exception {
-		if(!isNewUser(user)) throw new Exception("User already exists");
+		if(!isUser(user)) throw new Exception("User already exists");
 		users.add(user);
 	}
 
@@ -41,6 +41,15 @@ public class Users {
 			return true;
 		}
 		return false;
+	}
+
+	public boolean isLoggedIn(User user){
+		return loggedInUsers.parallelStream().filter(loggedIn -> loggedIn.getUUID().equals(user.getUUID())).findFirst() !=
+						null;
+	}
+
+	public boolean isUser(User user){
+		return users.parallelStream().filter(test -> test.getUUID().equals(user.getUUID())).findFirst() != null;
 	}
 
 	private List findByUUID(User test){
