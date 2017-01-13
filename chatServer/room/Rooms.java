@@ -1,6 +1,7 @@
 package chatServer.room;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class Rooms {
@@ -14,6 +15,12 @@ public class Rooms {
 	public void addRoom(Room room) throws Exception {
 		if(roomExists(room)) throw new Exception("Room already exists");
 		rooms.add(room);
+	}
+
+	public Room getRoomByName(String name){
+		List<Room> hits = rooms.parallelStream().filter(test -> test.getName().equals(name)).collect(Collectors.toList());
+		if(hits == null) return null;
+		return hits.get(0);
 	}
 
 	public HashSet<Room> getRooms(){
@@ -47,6 +54,8 @@ public class Rooms {
 		assert rooms2 != rooms1 : "rooms returned is not a new set";
 
 		assert rooms1.size() == 1 : "only one room yet size differs";
+
+		assert rooms.getRoomByName("room") == room : "did not find proper room by name";
 
 	}
 }
