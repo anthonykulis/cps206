@@ -8,7 +8,7 @@ public class User {
 	String name;
 	Date memberSince;
 
-	private User(){
+	protected User(){
 		this.UUID = null;
 		this.name = null;
 		this.memberSince = null;
