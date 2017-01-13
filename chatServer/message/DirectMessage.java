@@ -1,4 +1,4 @@
-package chatServer.DTO.message;
+package chatServer.message;
 
 public class DirectMessage {
 	public static class RoomMessage {
