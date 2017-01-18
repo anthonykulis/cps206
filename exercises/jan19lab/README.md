@@ -22,5 +22,8 @@ This is a non-graded exercise.
 Due at the end of class Jan 19, 2017. When completed correctly, you may leave (or not show up if you did it before 
 class).
 
+## Tips 
+See [Double.valueOf](http://docs.oracle.com/javase/8/docs/api/java/lang/Double.html#valueOf-java.lang.String-) for 
+easy `String` to `double` conversion. 
 
 
