@@ -1,10 +1,11 @@
 package exercises.orderlab;
 
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 public class Order {
 
-	private Item[] items;
+	private ArrayList<Item> items;
 	private double subTotal;
 	private double tax;
 	private double total;
@@ -44,14 +45,14 @@ public class Order {
 	}
 
 	public String toString(){
-		String receipt = "Item\tPrice\tQuantity\tCharged";
+		String receipt = "Item\tPrice\tQuantity\tCharged\n";
 		for(Item item : this.items){
-			receipt += item.getName() + "\t" + item.getPrice() + "\t" + item.getQuantity() + "\t" + item.getPrice() * item.getQuantity() + "\n";
+			receipt += item.getName() + "\t" + item.getPrice() + "\t" + item.getQuantity() + "\t\t" + item.getPrice() * item.getQuantity() + "\n";
 		}
 
 		receipt += "\n\nSub Total: " + this.subTotal;
 		receipt += "\nTax: " + this.tax;
-		receipt += "\nTotal: " + this.total;
+		receipt += "\nTotal: " + this.total + "\n";
 
 		return receipt;
 	}
