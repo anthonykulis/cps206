@@ -25,14 +25,17 @@ public class Order {
 		for(Item item : this.items){
 			double cost = item.getPrice() * item.getQuantity();
 
+			// cache discount "item" for later use
 			if(item.getName().equalsIgnoreCase("discount")) {
 				this.discount = item;
 				continue;
 			}
 
+			// update subtotal
 			this.subTotal += cost;
 		}
 
+		// now use discount
 		this.applyDiscount();
 	}
 
@@ -44,12 +47,18 @@ public class Order {
 		this.total = this.subTotal + this.tax;
 	}
 
+	// override toString so we print a receipt
 	public String toString(){
+
+		// header
 		String receipt = "Item\tPrice\tQuantity\tCharged\n";
+
+		// each item
 		for(Item item : this.items){
 			receipt += item.getName() + "\t" + item.getPrice() + "\t" + item.getQuantity() + "\t\t" + item.getPrice() * item.getQuantity() + "\n";
 		}
 
+		// footer
 		receipt += "\n\nSub Total: " + this.subTotal;
 		receipt += "\nTax: " + this.tax;
 		receipt += "\nTotal: " + this.total + "\n";
@@ -65,6 +74,7 @@ public class Order {
 
 	public static void main(String... args){
 
+		// requires at least one order to process
 		if(args.length < 1){
 			System.err.println("Usage: java Order <order> [order] ...");
 			System.exit(1);
