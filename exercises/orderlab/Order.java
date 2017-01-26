@@ -35,7 +35,7 @@ public class Order {
 
 		// each item
 		for(Item item : this.items){
-			receipt += item.getName() + "\t" + item.getPrice() + "\t" + item.getQuantity() + "\t\t" + item.getPrice() * item.getQuantity() + "\n";
+			receipt += item.toString();
 		}
 
 		// footer

@@ -23,4 +23,8 @@ public class Item {
 	public int getQuantity() {
 		return quantity;
 	}
+
+	public String toString(){
+		return this.getName() + "\t" + this.getPrice() + "\t" + this.getQuantity() + "\t\t" + this.getPrice() * this.getQuantity() + "\n";
+	}
 }
