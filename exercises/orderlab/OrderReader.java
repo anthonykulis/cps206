@@ -11,11 +11,11 @@ public class OrderReader {
 
 		// our collection of items
 		ArrayList<Item> items = new ArrayList<>();
+		//set up read
+		String line = null;
 
 		try {
 
-			//set up read
-			String line;
 			BufferedReader bufferedReader = new BufferedReader(new FileReader(orderFile));
 			line = bufferedReader.readLine();
 
@@ -33,11 +33,11 @@ public class OrderReader {
 
 				// collect values
 				String name = split[0];
-				int quanity = Integer.valueOf(split[2]);
+				int quantity = Integer.valueOf(split[2]);
 				double price = Double.valueOf(split[1]);
 
 				// add item
-				items.add(new Item(name, price, quanity));
+				items.add(new Item(name, price, quantity));
 
 				line = bufferedReader.readLine();
 			}

@@ -5,47 +5,27 @@ import java.util.ArrayList;
 
 public class Order {
 
-	private ArrayList<Item> items;
-	private double subTotal;
-	private double tax;
-	private double total;
-	private Item discount;
+	private final ArrayList<Item> items;
+	private final double subTotal;
+	private final double tax;
+	private final double total;
+	private final Item discount;
 
-	private final double TAX_RATE = .05;
-
-	public Order(){
+	// dont want used
+	private Order(){
 		this.items = null;
-		this.subTotal = 0;
-		this.tax = 0;
-		this.total =0;
+		this.subTotal = this.tax = this.total = 0;
 		this.discount = null;
 	}
 
-	public void computeSubTotal(){
-		for(Item item : this.items){
-			double cost = item.getPrice() * item.getQuantity();
-
-			// cache discount "item" for later use
-			if(item.getName().equalsIgnoreCase("discount")) {
-				this.discount = item;
-				continue;
-			}
-
-			// update subtotal
-			this.subTotal += cost;
-		}
-
-		// now use discount
-		this.applyDiscount();
+	public Order(ArrayList<Item> items, double subTotal, Item discount, double tax, double total){
+		this.items = items;
+		this.subTotal = subTotal;
+		this.tax = tax;
+		this.total = total;
+		this.discount = discount;
 	}
 
-	public void computeTax(){
-		this.tax = this.subTotal * this.TAX_RATE;
-	}
-
-	public void computeTotal(){
-		this.total = this.subTotal + this.tax;
-	}
 
 	// override toString so we print a receipt
 	public String toString(){
@@ -66,10 +46,7 @@ public class Order {
 		return receipt;
 	}
 
-	private void applyDiscount(){
-		if(this.discount == null) return;
-		this.subTotal -= this.subTotal * (this.discount.getQuantity() * this.discount.getPrice());
-	}
+
 
 
 	public static void main(String... args){
@@ -84,11 +61,16 @@ public class Order {
 
 			try {
 
-				Order order = new Order();
-				order.items = OrderReader.readItems(orderFile);
-				order.computeSubTotal();
-				order.computeTax();
-				order.computeTotal();
+				BasicOrderBuilder builder = new BasicOrderBuilder();
+				ArrayList<Item> items = OrderReader.readItems(orderFile);
+
+				for(Item item : items){
+					if(item.getName().equalsIgnoreCase("discount")) builder.setDiscount(item);
+					else builder.setItem(item);
+				}
+
+				Order order = builder.build();
+
 				System.out.println(order);
 
 			} catch (FileNotFoundException e) {
