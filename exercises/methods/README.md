@@ -85,4 +85,4 @@ public long solution(long fromRangeOne, long toRangeOne, long fromRangeTwo, long
 ```
 		
 ## Re-usability
-See how nice this is? Now I can call on *any* of those methods as I see fit without having to write any extra code. This is re-usability and it facilitates scaling. See my [example](LeverageMethods.java) and how I can call on each of those methods to show a mathematical step-through of solving the initial problem.
+See how nice this is? Now I can call on *any* of those methods as I see fit without having to write any extra code. This is re-usability and it facilitates scaling. See my [example](LeverageMethod.java) and how I can call on each of those methods to show a mathematical step-through of solving the initial problem.
