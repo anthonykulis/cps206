@@ -21,7 +21,7 @@ We could just write one method to solve this
 
 ```java
 public long solution(long m, long n, long o, long p){
-	return factorial( (m * m + m)/2) - (n * n + n)/2 + (o * o + o)/2 - (p * p + p)/2);
+	return factorial((m * m + m)/2) - (n * n + n)/2 + (o * o + o)/2 - (p * p + p)/2));
 }
 ```
 	
