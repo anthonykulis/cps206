@@ -68,7 +68,7 @@ public long solution(long fromRangeOne, long toRangeOne, long fromRangeTwo, long
 }
 ```
 				
-Now we could just stop there. The code isn't repeating anymore. But let us think about this. Remember when I asked what if I wanted the sum of two ranges? Well, we would repeat the code. So let bring this down into its smallest form and create another method.
+Now we could just stop there. The code isn't repeating anymore. But let us think about this. Remember when I asked what if I wanted the sum of two ranges? Well, to do so, we would repeat the code and repetition in code is bad. So let bring this down into its smallest form and create another method.
 
 ```java
 public sumTwoRanges(long fromRangeOne, long toRangeOne, long fromRangeTwo, long toRangeTwo){
