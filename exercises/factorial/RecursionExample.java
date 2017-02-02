@@ -2,7 +2,7 @@ package exercises.factorial;
 
 public class RecursionExample {
 
-	public int doFactorial(int n){
+	public long doFactorial(long n){
 		if(n == 1) return n;
 		return n * this.doFactorial(n - 1);
 	}
