@@ -80,7 +80,7 @@ Now we can simply update our initial method once more.
 
 ```java
 public long solution(long fromRangeOne, long toRangeOne, long fromRangeTwo, long toRangeTwo){
-	return factorial(sumTwoRanges(fromRangeOne, toRangeTo, sumRange(fromRangeTwo, toRangeTwo));
+	return factorial(sumTwoRanges(fromRangeOne, toRangeTo, fromRangeTwo, toRangeTwo));
 }
 ```
 		
