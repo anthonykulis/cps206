@@ -59,3 +59,22 @@ While in the current working directory that contains `myApplication.java` file y
     javac myApplication.java
     
 Of course, if your application name differs, use that name in place of `myApplication`. Make sure to continue to identify the `.java` extension.
+
+
+### Caveat - Using windows cmd line with packages
+Today in class we noticed that not all machines are created equal. This may be because of different java version, configurations, who knows. But what we did find was that 
+
+	javac edu\jalc\classes\Driver.java
+	
+works, but 
+
+	java edu\jalc\classes\Driver
+	
+does not.
+
+The best I can figure is that `java` itself doesn't know how to resolve the windows path. This makes some sense, but it is totally confusing that `javac` does.
+
+To fix this, compile like stated, but run with 	
+
+	java edu/jalc/classes/Driver
+	
