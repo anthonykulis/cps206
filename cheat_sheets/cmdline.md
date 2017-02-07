@@ -78,3 +78,6 @@ To fix this, compile like stated, but run with
 
 	java edu/jalc/classes/Driver
 	
+Or, more simply, you can also run it as follows:
+
+	java edu.jalc.classes.Driver
