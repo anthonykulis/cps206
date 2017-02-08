@@ -35,6 +35,6 @@ public class SodaBottleLidTest {
 		test.testAttach();
 		test.testDetach();
 
-		System.out.println("All SodaBottle Tests passed");
+		System.out.println("All SodaBottleLid Tests passed");
 	}
 }
