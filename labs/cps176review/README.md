@@ -35,7 +35,9 @@ Use the following as an example to construct your maze. Of course, you may subst
 	
 	
 ## Extra Credit
-Use arrow key *events* in place of typing *Up*, *Right*, *Left*, and *Down*. See the Java [tutorial](https://docs.oracle.com/javase/tutorial/uiswing/events/keylistener.html) if you wish to be challenged on this extra credit.
+Add monsters to the maze. If a user encounters a monster, they are overcome by fear and move 5 random places. This should not include the exit! This also means make sure not to put a monster in front of the exit, but the monsters should be randomly placed. 
+
+To run the application, it should be optional to have monsters. This means `java Maze MyMazeMap addMonsters 5` or `java Maze` or `java Maze MyMazeMap` are all legal options. The generic usage syntax would look like `java Maze [maze file] addMonsters <number of monsters>`. Of course, if the user doesn't pass a maze file, for this one, we will not allow them to add random monsters.
 
 ## *Run By* Date
 While this, and all labs, are due at the end of the semester, if you wish to be eligible for the extra credit, this assignment must be submitted in running order by Friday at midnight, Feb 10, 2017. You may either submit via D2L or by Github commit (make sure I am following you on Github and that you tag me in the commit). 
