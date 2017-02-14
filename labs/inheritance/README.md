@@ -48,4 +48,4 @@ area. These methods should be named `toSquare` and `toCicle`
  
 ## Run By Date
  
-While this, and all labs, are due at the end of the semester, if you wish to be eligible for the extra credit, this assignment must be submitted in running order by Friday at midnight, April 7, 2017. You may either submit via D2L or by Github commit (make sure I am following you on Github and that you tag me in the commit).
+While this, and all labs, are due at the end of the semester, if you wish to be eligible for the extra credit, this assignment must be submitted in running order by Friday at midnight, March 10, 2017. You may either submit via D2L or by Github commit (make sure I am following you on Github and that you tag me in the commit).
