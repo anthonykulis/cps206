@@ -1,6 +1,6 @@
-package edu.jalc.inclass.bottle;
+package edu.jalc.inclass.material.bottle;
 
-import edu.jalc.inclass.lid.SodaBottleLid;
+import edu.jalc.inclass.material.lid.SodaBottleLid;
 
 public class SodaBottleApp {
 

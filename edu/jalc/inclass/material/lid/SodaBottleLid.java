@@ -1,4 +1,4 @@
-package edu.jalc.inclass.lid;
+package edu.jalc.inclass.material.lid;
 
 public class SodaBottleLid {
 

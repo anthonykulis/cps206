@@ -1,4 +1,4 @@
-package edu.jalc.inclass.logo;
+package edu.jalc.inclass.material.logo;
 
 public class CocaColaLogo {
 	private final double height;

@@ -1,8 +1,8 @@
-package edu.jalc.inclass.bottle;
+package edu.jalc.inclass.material.bottle;
 
-import edu.jalc.inclass.label.SodaBottleLabel;
-import edu.jalc.inclass.lid.SodaBottleLid;
-import edu.jalc.inclass.liquid.Soda;
+import edu.jalc.inclass.material.label.SodaBottleLabel;
+import edu.jalc.inclass.material.lid.SodaBottleLid;
+import edu.jalc.inclass.product.liquid.Soda;
 
 public class SodaBottleTest {
 
