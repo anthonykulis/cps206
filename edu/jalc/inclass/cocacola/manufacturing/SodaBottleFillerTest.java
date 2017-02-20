@@ -10,8 +10,7 @@ public class SodaBottleFillerTest {
    public void testGetInstance(){
       System.out.println("Testing SodaBottleFiller::getInstance");
       SodaBottleFiller sodaBottleFiller = SodaBottleFiller.getInstance();
-      sodaBottleFiller = null;
-      assert(sodaBottleFiller.getInstance() != sodaBottleFiller);
+      assert(sodaBottleFiller == sodaBottleFiller.getInstance());
    }
 
    public void testFillSoda() throws Exception{

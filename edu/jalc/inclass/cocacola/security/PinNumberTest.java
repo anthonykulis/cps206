@@ -6,29 +6,28 @@ import java.util.Calendar;
 
 public class PinNumberTest {
 
-	public void testGetPin(){
-		System.out.println("Testing PinNumber::getPin");
+   public void testGetPin(){
+      System.out.println("Testing PinNumber::getPin");
       PinNumber pinNumber = new PinNumber(34);
       assert(pinNumber.getPin() == 34);	
    }
 
-	public void testGetExpirationDate(){
-		System.out.println("Testing PinNumber::getExpirationDate");
+   public void testGetExpirationDate(){
+      System.out.println("Testing PinNumber::getExpirationDate");
       PinNumber pinNumber = new PinNumber(0);
-      Calendar expiresOn;
-      expiresOn = Calendar.getInstance();
+      Calendar expiresOn = Calendar.getInstance();
       expiresOn.add(Calendar.DATE, 365);
       DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-		assert(pinNumber.getExpirationDate().equals(dateFormat.format(expiresOn.getTime())));
-	}
+      assert(pinNumber.getExpirationDate().equals(dateFormat.format(expiresOn.getTime())));
+   }
 
 
-	public static void main(String... args){
-		PinNumberTest pinNumberTest = new PinNumberTest();
-		pinNumberTest.testGetPin();
-		pinNumberTest.testGetExpirationDate();
-		System.out.println("Completed testing PinNumber");
-
-	}
+   public static void main(String... args){
+      PinNumberTest pinNumberTest = new PinNumberTest();
+      pinNumberTest.testGetPin();
+      pinNumberTest.testGetExpirationDate();
+      System.out.println("Completed testing PinNumber");
+   
+   }
 
 }
