@@ -2,20 +2,21 @@ package edu.jalc.inclass.cocacola.product.liquid;
 
 public class Soda {
 
-	private double volume;
+   private double volume;
 
-	public Soda(){
-		this.setVolume(0.0);
-	}
+   public Soda(){
+      this.setVolume(0.0);
+   }
 
-	public Soda(double volume){
-		this.setVolume(volume);
-	}
+   public Soda(double volume){
+      this.setVolume(volume);
+   }
 
-	public double getVolume(){ return this.volume; }
+   public double getVolume(){ 
+      return this.volume; }
 
-	public Soda setVolume(double volume){
-		this.volume = volume;
-		return this;
-	}
+   public Soda setVolume(double volume){
+      this.volume = volume;
+      return this;
+   }
 }
