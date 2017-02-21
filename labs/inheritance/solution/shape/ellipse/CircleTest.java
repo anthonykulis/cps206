@@ -14,10 +14,21 @@ public class CircleTest {
 		assert(circle.area() == Math.PI * 3 * 3);
 	}
 
+	private void testToCircle(){
+		System.out.println("Testing Circle::toCircle");
+
+		// purposely making a circle. hard to test for round off error
+		Ellipse ellipse = new Ellipse(3, 3);
+		Circle circle = Circle.toCircle(ellipse);
+
+		assert(ellipse.area() == circle.area());
+	}
+
 	public static void main(String... args){
 		CircleTest test = new CircleTest();
 		test.testCircumference();
 		test.testArea();
+		test.testToCircle();
 		System.out.println("Completed Circle tests");
 	}
 }
