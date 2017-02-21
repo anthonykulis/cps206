@@ -1,7 +1,5 @@
 package labs.inheritance.solution.shape.edged;
 
-import labs.inheritance.solution.Triangle;
-
 public final class RightTriangle extends Triangle {
 
 	public RightTriangle(double height, double base){
@@ -15,27 +13,4 @@ public final class RightTriangle extends Triangle {
 		return height + width + hypotenuse;
 	}
 
-	/* test */
-	void test(){
-		testPerimeter();
-		testArea();
-	}
-
-	private void testPerimeter(){
-		this.setHeight(10);
-		this.setWidth(10);
-		double h = Math.sqrt(10 * 10 + 10 * 10);
-		assert(this.perimeter() == 10 + 10 + h);
-	}
-
-	private void testArea(){
-		this.setHeight(10);
-		this.setWidth(10);
-		assert(this.area() == .5 * 10 * 10);
-	}
-
-	public static void main(String... args){
-		RightTriangle rightTriangle = new RightTriangle(10, 10);
-		rightTriangle.test();
-	}
 }
