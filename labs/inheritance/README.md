@@ -47,7 +47,7 @@ the implementation is correct. You do not need a driver to demonstrate its funct
 round off error without 
 having to do 
 major test manipulation. (eg a square with an area of 3.1411 will never resolve without runoff error to a circle of 
-the same area)
+the same area even though the implementation is technically correct)
  
 ## Run By Date
  
