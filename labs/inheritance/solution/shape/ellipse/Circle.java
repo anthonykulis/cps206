@@ -8,5 +8,7 @@ public final class Circle extends Ellipse {
 
 	public final double circumference(){ return (this.getMinorAxis() + this.getMajorAxis()) * Math.PI; }
 
-
+	public final String toString(){
+		return "radius: " + super.getMajorAxis() + "   area: " + this.area();
+	}
 }

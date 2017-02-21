@@ -14,17 +14,17 @@ public class Driver {
 		Rectangle rectangle = new Rectangle(3, 9);
 		RightTriangle rightTriangle = new RightTriangle(8, 4);
 
-		System.out.println(square.equals(circle));
-		System.out.println(square.equals(rightTriangle));
+		System.out.println("Square equals circle? " + square.equals(circle));
+		System.out.println("Square equals right triangle? " + square.equals(rightTriangle));
 
 		Circle fromSquare = ExtraCredit.toCircle(square);
 		Square fromCircle = ExtraCredit.toSquare(circle);
 		Circle fromRightTriangle = ExtraCredit.toCircle(rightTriangle);
 		Square fromEllise = ExtraCredit.toSquare(ellipse);
 
-		System.out.println(fromSquare + " <<< >>> " + square);
-		System.out.println(fromCircle + " <<< >>> " + circle);
-		System.out.println(fromRightTriangle + " <<< >>>" + rightTriangle);
-		System.out.println(fromEllise + " <<< >>>" + ellipse);
+		System.out.println("Square to Circle -> " + fromSquare + " <<< FROM >>> " + square);
+		System.out.println("Circle to Square -> " + fromCircle + " <<< FROM >>> " + circle);
+		System.out.println("RightTriangle to Circle -> " + fromRightTriangle + " <<< FROM >>> " + rightTriangle);
+		System.out.println("Ellipse to Square -> " + fromEllise + " <<< FROM >>> " + ellipse);
 	}
 }
