@@ -102,7 +102,7 @@ public class Rain implements Pourable {
 
 
 ## Grading
-* If your POJO lab is not correct, this is not correct.
+* If your POJO lab is not correct, this lab is not correct. You must have a working POJO lab to continue with this.
 * You will be graded on having proper interfaces to describe your actions
 * You will be graded on Interface Segregation Principle.
 * You will be graded on your demonstration of polymorphism via interfaces.
