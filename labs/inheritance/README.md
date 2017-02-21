@@ -31,7 +31,8 @@ width of 2, it should equal a triangle with a height of 10 and a base of 4.
 
 ## Grading
 You will be graded on proper use of keywords. Methods that should not be allowed to be overridden should be handled as such, classes not meant to be instantiated should be blocked, and child classes requiring implementations should be forced 
-to do so. Any child class that cannot be inherited later, should not be allowed to be inherited. Do not violate DRY, Open/Closed, etc, and you will get full marks. This lab is not difficult, but requires attention to detail. 
+to do so. Any child class that cannot be inherited later, should not be allowed to be inherited. Do not violate DRY, Open/Closed, etc, and you will get full marks. This lab is not difficult, but requires attention to detail. I suggest using UML to 
+keep track of your design. 
 
 ## Extra Credit
 This lab will have 2 parts of extra, totally 10 possible. 
