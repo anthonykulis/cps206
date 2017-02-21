@@ -1,4 +1,4 @@
-package labs.inheritance.solution;
+package labs.inheritance.solution.shape.ellipse;
 
 public final class Circle extends Ellipse {
 

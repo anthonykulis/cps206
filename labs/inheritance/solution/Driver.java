@@ -1,5 +1,11 @@
 package labs.inheritance.solution;
 
+import labs.inheritance.solution.shape.edged.Rectangle;
+import labs.inheritance.solution.shape.edged.RightTriangle;
+import labs.inheritance.solution.shape.edged.Square;
+import labs.inheritance.solution.shape.ellipse.Circle;
+import labs.inheritance.solution.shape.ellipse.Ellipse;
+
 public class Driver {
 	public static void main(String... args){
 		Square square = new Square(4);

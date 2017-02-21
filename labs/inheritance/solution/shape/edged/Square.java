@@ -1,4 +1,4 @@
-package labs.inheritance.solution;
+package labs.inheritance.solution.shape.edged;
 
 public final class Square extends Rectangle {
 

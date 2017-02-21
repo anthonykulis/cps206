@@ -1,5 +1,9 @@
 package labs.inheritance.solution;
 
+import labs.inheritance.solution.shape.edged.Square;
+import labs.inheritance.solution.shape.ellipse.Circle;
+import labs.inheritance.solution.shape.TwoDimensionalShape;
+
 public class ExtraCredit {
 
 	public static Square toSquare(TwoDimensionalShape shape){

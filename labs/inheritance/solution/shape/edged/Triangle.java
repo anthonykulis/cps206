@@ -1,4 +1,4 @@
-package labs.inheritance.solution;
+package labs.inheritance.solution.shape.edged;
 
 abstract class Triangle extends EdgedShape {
 

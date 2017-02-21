@@ -1,5 +1,7 @@
-package labs.inheritance.solution;
+package labs.inheritance.solution.shape.edged;
 
+
+import labs.inheritance.solution.shape.TwoDimensionalShape;
 
 abstract class EdgedShape extends TwoDimensionalShape {
 	private double height;
@@ -26,8 +28,8 @@ abstract class EdgedShape extends TwoDimensionalShape {
 		this.width = width;
 	}
 
-	abstract double area();
-	abstract double perimeter();
+	abstract public double area();
+	abstract public double perimeter();
 
 	public final String toString(){
 		return "height: " + height + "  width: " + width + "   area: " + this.area();

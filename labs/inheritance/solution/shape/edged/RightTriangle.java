@@ -1,4 +1,6 @@
-package labs.inheritance.solution;
+package labs.inheritance.solution.shape.edged;
+
+import labs.inheritance.solution.Triangle;
 
 public final class RightTriangle extends Triangle {
 
