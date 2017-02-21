@@ -5,6 +5,7 @@ import labs.inheritance.solution.shape.edged.RightTriangle;
 import labs.inheritance.solution.shape.edged.Square;
 import labs.inheritance.solution.shape.ellipse.Circle;
 import labs.inheritance.solution.shape.ellipse.Ellipse;
+import labs.inheritance.solution.shape.transforms.ExtraCredit;
 
 public class Driver {
 	public static void main(String... args){

@@ -1,5 +1,7 @@
 package labs.inheritance.solution.shape.ellipse;
 
+import labs.inheritance.solution.shape.TwoDimensionalShape;
+
 public final class Circle extends Ellipse {
 
 	public Circle(double radius){
@@ -10,5 +12,12 @@ public final class Circle extends Ellipse {
 
 	public final String toString(){
 		return "radius: " + super.getMajorAxis() + "   area: " + this.area();
+	}
+
+	public static Circle toCircle(TwoDimensionalShape twoDimensionalShape){
+		double area = twoDimensionalShape.area();
+		double radiusSquared = area / Math.PI;
+		double radius = Math.sqrt(radiusSquared);
+		return new Circle(radius);
 	}
 }
