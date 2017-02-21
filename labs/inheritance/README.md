@@ -14,7 +14,7 @@ It will also demonstrate how polymorphism can be used via the open/closed princi
 
 * Each of these classes must be able to compute their *area* and *perimeter* (*circumference*) via proper inheritance.
 
-* Each of these classes must provide a human readable *toString* method.
+* Each of these classes must provide a human readable *toString* method detailing their properties. Be smart about what you think you should provide to the consumer of the method. This is open-ended, I will accept anything that is proper and succinct.
 
 * Each of these classes must provide an *equals* method. This method must be able to compare any *TwoDimensionalShape* to see if their areas are equal. If and only if the area is equal do we say they are equal. You do not have to consider round off error.
 
@@ -30,10 +30,8 @@ width of 2, it should equal a triangle with a height of 10 and a base of 4.
 * When computing the 2 lengths of a ellipse, the proper terms are *minor* and *major* axis.
 
 ## Grading
-You will be graded on proper use of keywords. Methods that should not be allowed to be overridden should be handled 
-as such, classes not meant to be instantiated should be blocked, and child classes requiring implementations should be forced 
-to do so. Do not violate DRY, Open/Closed, etc, and you will get full marks. This lab is not difficult, but requires 
-attention to detail. 
+You will be graded on proper use of keywords. Methods that should not be allowed to be overridden should be handled as such, classes not meant to be instantiated should be blocked, and child classes requiring implementations should be forced 
+to do so. Any child class that cannot be inherited later, should not be allowed to be inherited. Do not violate DRY, Open/Closed, etc, and you will get full marks. This lab is not difficult, but requires attention to detail. 
 
 ## Extra Credit
 This lab will have 2 parts of extra, totally 10 possible. 
@@ -43,8 +41,8 @@ Write unit tests with 100% method coverage. You may use jUnit if you so choose, 
 *set, get, assert*. Make sure to enable assertions when testing with *java -ea MyTest*
 
 ### Part 2
-Write a class that has 2 methods which takes any of our objects and returns either a *Circle* *Square* of the same 
-area. These methods should be named `toSquare` and `toCicle`
+Write a class that has 2 methods which takes any of our objects and returns either a *Circle* or a *Square* of the same 
+area. These methods should be named `toSquare` and `toCicle`. Each method needs tests to prove the implementation is correct. You do not need a driver to demonstrate its functionality, but the class does need to be packaged correctly.
  
 ## Run By Date
  
