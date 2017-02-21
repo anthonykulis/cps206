@@ -5,7 +5,6 @@ import labs.inheritance.solution.shape.edged.RightTriangle;
 import labs.inheritance.solution.shape.edged.Square;
 import labs.inheritance.solution.shape.ellipse.Circle;
 import labs.inheritance.solution.shape.ellipse.Ellipse;
-import labs.inheritance.solution.shape.transforms.ExtraCredit;
 
 public class Driver {
 	public static void main(String... args){
@@ -18,10 +17,10 @@ public class Driver {
 		System.out.println("Square equals circle? " + square.equals(circle));
 		System.out.println("Square equals right triangle? " + square.equals(rightTriangle));
 
-		Circle fromSquare = ExtraCredit.toCircle(square);
-		Square fromCircle = ExtraCredit.toSquare(circle);
-		Circle fromRightTriangle = ExtraCredit.toCircle(rightTriangle);
-		Square fromEllise = ExtraCredit.toSquare(ellipse);
+		Circle fromSquare = Circle.toCircle(square);
+		Square fromCircle = Square.toSquare(circle);
+		Circle fromRightTriangle = Circle.toCircle(rightTriangle);
+		Square fromEllise = Square.toSquare(ellipse);
 
 		System.out.println("Square to Circle -> " + fromSquare + " <<< FROM >>> " + square);
 		System.out.println("Circle to Square -> " + fromCircle + " <<< FROM >>> " + circle);
