@@ -41,8 +41,11 @@ Write unit tests with 100% method coverage. You may use jUnit if you so choose, 
 *set, get, assert*. Make sure to enable assertions when testing with *java -ea MyTest*
 
 ### Part 2
-Write a class that has 2 methods which takes any of our objects and returns either a *Circle* or a *Square* of the same 
-area. These methods should be named `toSquare` and `toCicle`. Each method needs tests to prove the implementation is correct. You do not need a driver to demonstrate its functionality, but the class does need to be packaged correctly.
+Write class methods for the appropriate class which takes any of our objects and returns either a *Circle* or a 
+*Square* of the same area. These methods should be named `toSquare` and `toCicle`. Each method needs tests to prove the implementation is correct. You do not need a driver to demonstrate its functionality, but the class does need to be packaged 
+correctly. The tricky part is to write your tests such that you will not suffer round off error without having to do 
+major test manipulation. (eg a square with an area of 3.1411 will never resolve without runoff error to a circle of 
+the same area)
  
 ## Run By Date
  
