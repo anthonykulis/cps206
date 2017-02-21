@@ -1,6 +1,6 @@
 package labs.inheritance.solution.shape.ellipse;
 
-import labs.inheritance.solution.TwoDimensionalShape;
+import labs.inheritance.solution.shape.TwoDimensionalShape;
 
 abstract class EllipseShape extends TwoDimensionalShape {
 
