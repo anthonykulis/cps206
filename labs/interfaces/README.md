@@ -95,7 +95,7 @@ public class Rain implements Pourable {
 		((Pourable)iterator.next()).pour(1.0);
 	}
 	
-* Of course, when demonstrating polymorphism, you may not use my example, but you are free to reimplement it using list streams to perform the same action.
+* Of course, when demonstrating polymorphism, you may not use my example, but you are free to reimplement it using list streams to perform the same action if `Pourable` is a logical interface to your work.
 
 
 * As in above, if you are required to make additional classes to support your methods, make them. 
