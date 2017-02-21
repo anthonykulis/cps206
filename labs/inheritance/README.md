@@ -42,7 +42,8 @@ Write unit tests with 100% method coverage. You may use jUnit if you so choose, 
 
 ### Part 2
 Write class methods for the appropriate class which takes any of our objects and returns either a *Circle* or a 
-*Square* of the same area. These methods should be named `toSquare` and `toCicle`. Each method needs tests to prove the implementation is correct. You do not need a driver to demonstrate its functionality, just tests are fine. If you so wish, you may try it out in the applications `Driver` as I did in my solution. The tricky part is to write your tests such that you will not suffer 
+*Square* of the same area. These methods should be named `toSquare` and `toCircle`. Each method needs tests to prove 
+the implementation is correct. You do not need a driver to demonstrate its functionality, just tests are fine. If you so wish, you may try it out in the applications `Driver` as I did in my solution. The tricky part is to write your tests such that you will not suffer 
 round off error without 
 having to do 
 major test manipulation. (eg a square with an area of 3.1411 will never resolve without runoff error to a circle of 
