@@ -2,18 +2,18 @@ package exercises.polymorphism.animal;
 
 abstract public class Animal {
 
-	private String growls;
+	private String growl;
 
 	private Animal(){
-		this.growls = null;
+		this.growl = null;
 	}
 
-	Animal(String growls){
-		this.growls = growls;
+	Animal(String growl){
+		this.growl = growl;
 	}
 
-	String getGrowl(){
-		return this.growls;
+	public String toString(){
+		return "growls with " + this.growl;
 	}
 
 }

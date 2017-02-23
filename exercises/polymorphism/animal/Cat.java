@@ -15,4 +15,8 @@ public class Cat extends Animal {
 		this.meow = meow;
 	}
 
+	public String toString(){
+		return "A cat purrs with " + this.purr + " and meows with " + this.meow + " and " + super.toString();
+	}
+
 }
