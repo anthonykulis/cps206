@@ -4,12 +4,14 @@ public class IngredientTest {
 
 	public void testGetName(){
 		System.out.println("Testing Ingredient::getName");
-		assert(false);
+		Ingredient ingredient = new Ingredient("salt");
+		assert(ingredient.getName() == "salt");
 	}
 
 	public void testtoString(){
 		System.out.println("Testing Ingredient::toString");
-		assert(false);
+		Ingredient ingredient = new Ingredient("salt");
+		assert(ingredient.toString().equals(ingredient.getName()));
 	}
 
 	public static void main(String... args){
