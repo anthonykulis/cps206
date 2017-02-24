@@ -2,11 +2,12 @@ package exercises.polymorphism.animal;
 
 public class Dog extends Animal {
 
-	String bark;
-	String whimper;
+	private final String bark;
+	private final String whimper;
 
 	private Dog(){
 		super(null);
+		this.bark = this.whimper = null;
 	}
 
 	public Dog(String bark, String whimper, String growl){

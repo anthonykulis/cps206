@@ -2,11 +2,12 @@ package exercises.polymorphism.animal;
 
 public class Cat extends Animal {
 
-	String meow;
-	String purr;
+	private final String meow;
+	private final String purr;
 
 	private Cat(){
 		super(null);
+		this.meow = this.purr = null;
 	}
 
 	public Cat(String meow, String purr, String growl){
