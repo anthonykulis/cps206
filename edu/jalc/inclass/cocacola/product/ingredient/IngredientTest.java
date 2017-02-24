@@ -5,7 +5,7 @@ public class IngredientTest {
 	public void testGetName(){
 		System.out.println("Testing Ingredient::getName");
 		Ingredient ingredient = new Ingredient("salt");
-		assert(ingredient.getName() == "salt");
+		assert(ingredient.getName().equals("salt"));
 	}
 
 	public void testtoString(){

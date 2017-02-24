@@ -22,14 +22,14 @@ public class RecipeTest {
 		System.out.println("Testing Recipe::getName");
 		Ingredient ingredient = new Ingredient("salt");
 		Recipe recipe = new Recipe("food", "Burn it",ingredient);
-		assert(recipe.getName() == "food");
+		assert(recipe.getName().equals("food"));
 	}
 
 	public void testGetInstructions(){
 		System.out.println("Testing Recipe::getInstructions");
 		Ingredient ingredient = new Ingredient("salt");
 		Recipe recipe = new Recipe("food", "Burn it", ingredient);
-		assert(recipe.getInstructions() == "Burn it");
+		assert(recipe.getInstructions().equals("Burn it"));
 	}
 
 	public void testToString(){

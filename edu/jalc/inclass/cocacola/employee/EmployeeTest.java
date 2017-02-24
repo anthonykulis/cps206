@@ -7,14 +7,14 @@ public class EmployeeTest {
 	public void testNameOnlyConstructor(){
 		System.out.println("Testing Employee(String name)");
 		Employee employee = new Employee("Brandon");
-		assert(employee.getName() == "Brandon");
+		assert(employee.getName().equals("Brandon"));
 	}
 
 	public void testNameAndPinConstructor(){
 		System.out.println("Testing Employee(String name, PinNumber pinNumber)");
 		PinNumber pinNumber = new PinNumber(0);
 		Employee employee = new Employee("Brandon",pinNumber);
-		assert(employee.getName() == "Brandon");
+		assert(employee.getName().equals("Brandon"));
 		assert(employee.getPinNumber() == pinNumber);
 	}
 
@@ -29,7 +29,7 @@ public class EmployeeTest {
 	public void testGetName(){
 		System.out.println("Testing Employee::getName");
 		Employee employee = new Employee("Brandon");
-		assert(employee.getName() == "Brandon");
+		assert(employee.getName().equals("Brandon"));
 	}
 
 	public void testGetPinNumber(){
