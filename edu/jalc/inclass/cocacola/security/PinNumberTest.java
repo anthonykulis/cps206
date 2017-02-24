@@ -1,15 +1,24 @@
 package edu.jalc.inclass.cocacola.security;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class PinNumberTest {
 
 	public void testGetPin(){
 		System.out.println("Testing PinNumber::getPin");
-		assert(false);
+		PinNumber pinNumber = new PinNumber(0);
+		assert(pinNumber.getPin() == 0);
 	}
 
 	public void testGetExpirationDate(){
 		System.out.println("Testing PinNumber::getPin");
-		assert(false);
+		PinNumber pinNumber = new PinNumber(0);
+		Calendar expiresOn = Calendar.getInstance();
+		expiresOn.add(Calendar.DATE, 365);
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+		assert(pinNumber.getExpirationDate().equals(dateFormat.format(expiresOn.getTime())));
 	}
 
 
