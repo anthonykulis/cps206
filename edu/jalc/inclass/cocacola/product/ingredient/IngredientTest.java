@@ -4,20 +4,22 @@ public class IngredientTest {
 
    public void testGetName(){
       System.out.println("Testing Ingredient::getName");
-      Ingredient ingredient = new Ingredient("Coke");
-      assert(ingredient.getName().equals("Coke"));
+      String name = "caffeine";
+      Ingredient ingredient = new Ingredient(name);
+      assert(ingredient.getName().equals(name));
    }
 
-   public void testtoString(){
+   public void testToString(){
       System.out.println("Testing Ingredient::toString");
-      Ingredient ingredient = new Ingredient("Coke");
-      assert(ingredient.toString().equals("Coke"));
+      String name = "sugar";
+      Ingredient ingredient = new Ingredient(name);
+      assert(ingredient.toString().equals(name));
    }
 
-   public static void main(String... args){
-      IngredientTest ingredientTest = new IngredientTest();
-      ingredientTest.testGetName();
-      ingredientTest.testtoString();
-      System.out.println("Completed testing Ingredients");
+   public static void main(String[] args){
+      IngredientTest test = new IngredientTest();
+      test.testGetName();
+      test.testToString();
+      System.out.println("All Tests for Ingredient Passed");
    }
 }
