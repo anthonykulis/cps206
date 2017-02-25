@@ -3,7 +3,7 @@ package edu.jalc.inclass.cocacola.product.ingredient;
 public class IngredientTest {
 
 	public void testGetName(){
-		System.out.println("Testing Ingredient::getName");
+   	System.out.println("Testing Ingredient::getName");
       Ingredient ingredient = new Ingredient("carbonated water");
 		assert(ingredient.getName().equals("carbonated water"));
 	}
