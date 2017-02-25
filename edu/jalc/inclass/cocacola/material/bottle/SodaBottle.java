@@ -18,7 +18,7 @@ public class SodaBottle {
 		this.label = null;
 	}
 
-	SodaBottle(double capacity, SodaBottleLid lid, Soda soda, SodaBottleLabel label) throws Exception {
+	public SodaBottle(double capacity, SodaBottleLid lid, Soda soda, SodaBottleLabel label) throws Exception {
 		this.capacity = capacity;
 		this.setLid(lid);
 		this.setSoda(soda);

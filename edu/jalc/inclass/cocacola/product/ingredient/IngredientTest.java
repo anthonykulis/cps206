@@ -4,12 +4,14 @@ public class IngredientTest {
 
 	public void testGetName(){
 		System.out.println("Testing Ingredient::getName");
-		assert(false);
+      Ingredient ingredient = new Ingredient("carbonated water");
+		assert(ingredient.getName().equals("carbonated water"));
 	}
 
 	public void testtoString(){
-		System.out.println("Testing Ingredient::toString");
-		assert(false);
+		System.out.println("Testing Ingredient::getName");
+      Ingredient ingredient = new Ingredient("carbonated water");
+		assert(ingredient.toString().equals("carbonated water"));
 	}
 
 	public static void main(String... args){
