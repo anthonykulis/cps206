@@ -53,3 +53,6 @@ the same area even though the implementation is technically correct)
 ## Run By Date
  
 While this, and all labs, are due at the end of the semester, if you wish to be eligible for the extra credit, this assignment must be submitted in running order by Friday at midnight, March 10, 2017. You may either submit via D2L or by Github commit (make sure I am following you on Github and that you tag me in the commit).
+
+### Extended
+I have extended this lab until the Wednesday after spring break. This means for the full 10 points extra credit, you will need to have a correct, running solution by March 22, 2017 at midnight.
