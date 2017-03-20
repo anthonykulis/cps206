@@ -1,4 +1,4 @@
-# Test One Study Guide
+# Test Two Study Guide
 This covers the topics of the test and tips on how to prepare for it. This test is 9 questions and has 3 bonus questions, for a total of 12 questions. The test covers everything after ending the advanced class topics up to the start of 
 interfaces. Like all tests, there are no make-ups. You will be graded on the best 3 out of 4, so if you miss a test for any reason, it will be your dropped exam.
 
