@@ -10,24 +10,24 @@ public class SodaBottleFillerTest {
    public void testGetInstance(){
       System.out.println("Testing SodaBottleFiller::getInstance");
       SodaBottleFiller sodaBottleFiller = SodaBottleFiller.getInstance();
-      assert(sodaBottleFiller == sodaBottleFiller.getInstance());
+      assert(sodaBottleFiller.getInstance() == sodaBottleFiller);
    }
 
    public void testFillSoda() throws Exception{
       System.out.println("Testing SodaBottleFiller::fillSoda");
-      Soda soda = new Soda(0.0);
-      SodaBottleLid lid = new SodaBottleLid(0, 0);
-      SodaBottle sodaBottle = new SodaBottle(0.0, lid, soda, null);
-      sodaBottle.setSoda(soda);
+      SodaBottleLid lid = new SodaBottleLid(3, 4);
+      Soda soda = new Soda(9.5);
+      SodaBottle bottle = new SodaBottle(20.0, lid, soda, null);
+      bottle.setSoda(soda);
       SodaBottleFiller sodaBottleFiller = SodaBottleFiller.getInstance();
-      sodaBottleFiller.fillSoda(sodaBottle);
-      assert(soda.getVolume() == sodaBottle.getCapacity());
+      sodaBottleFiller.fillSoda(bottle);
+      assert(bottle.getCapacity() == soda.getVolume());
    }
 
-   public static void main(String... args) throws Exception{
-      SodaBottleFillerTest sodaBottleFillerTest = new SodaBottleFillerTest();
-      sodaBottleFillerTest.testGetInstance();
-      sodaBottleFillerTest.testFillSoda();
-      System.out.println("Completed testing SodaBottleFiller");
+   public static void main(String[] args) throws Exception{
+      SodaBottleFillerTest test = new SodaBottleFillerTest();
+      test.testGetInstance();
+      test.testFillSoda();
+      System.out.println("All Tests for SodaBottleFiller Passed");
    }
 }

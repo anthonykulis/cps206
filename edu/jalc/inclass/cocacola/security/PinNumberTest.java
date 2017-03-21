@@ -8,26 +8,25 @@ public class PinNumberTest {
 
    public void testGetPin(){
       System.out.println("Testing PinNumber::getPin");
-      PinNumber pinNumber = new PinNumber(34);
-      assert(pinNumber.getPin() == 34);	
+      PinNumber pin = new PinNumber(2134);
+      assert(2134 == pin.getPin());
    }
+
 
    public void testGetExpirationDate(){
       System.out.println("Testing PinNumber::getExpirationDate");
-      PinNumber pinNumber = new PinNumber(0);
       Calendar expiresOn = Calendar.getInstance();
+      PinNumber pin = new PinNumber(2134);
       expiresOn.add(Calendar.DATE, 365);
-      DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-      assert(pinNumber.getExpirationDate().equals(dateFormat.format(expiresOn.getTime())));
+      DateFormat format = new SimpleDateFormat("yyyy/MM/dd");
+      assert(pin.getExpirationDate().equals(format.format(expiresOn.getTime())));
    }
 
-
-   public static void main(String... args){
-      PinNumberTest pinNumberTest = new PinNumberTest();
-      pinNumberTest.testGetPin();
-      pinNumberTest.testGetExpirationDate();
-      System.out.println("Completed testing PinNumber");
-   
+   public static void main(String[] args){
+      PinNumberTest test = new PinNumberTest();
+      test.testGetPin();
+      test.testGetExpirationDate();
+      System.out.println("All Tests for PinNumber Passed");
    }
 
 }
