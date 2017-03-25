@@ -3,3 +3,5 @@ Interfaces are cool and powerful, but we need to understand how to use them effe
 
 
 * [Builder Pattern](patterns/BuilderPattern.md)
+* [Observer Pattern](patterns/ObserverPattern.md)
+* [Data Access Object Pattern](patterns/DAO.md)
