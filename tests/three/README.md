@@ -22,4 +22,4 @@ This test covers the topics everything from interface introduction to the builde
 * Do not miss the first problem. It has been the first problem on every test so far and will be on this one.
 * Because this is about interfaces, I will not be grading the body of methods but rather the signatures, visibility, etc.
 * If you are still confused on what polymorphism is, and since you will be required to use it on this exam fairly heavily, I high suggest you practice it and ask any questions you need before the exam.
-* I spend more time on testing your understanding of interfaces than anything else. Do not get caught up with the builder pattern. You have just spent 2+ weeks demonstrating to me you know how to write a builder pattern. Spend 95% of your time understanding interfaces, polymorphism, etc. 
+* This exam spends more time on testing your understanding of interfaces than anything else. Do not get caught up with the builder pattern. You have just spent 2+ weeks demonstrating to me you know how to write a builder pattern. Spend 95% of your time understanding interfaces, polymorphism, etc. 
